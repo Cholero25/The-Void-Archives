@@ -24,11 +24,13 @@ Welcome to the forbidden archive of cosmic horrors.
 - 💾 Hosted via GitHub Pages.
 
 ---
-# STYLES 
+## STYLES 
 - 🌈 Background color is #12141b;
 - 🌈 Text color is #ccc for normal text
 - 🌈 Text color #c4bfb2; for formal text and titles
 - 📃 font is 'Cinzel', serif for titles and text
+
+---
   
 ## 🛠️ Technologies Used
 
