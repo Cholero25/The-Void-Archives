@@ -33,8 +33,8 @@ Welcome to the forbidden archive of cosmic horrors.
 
 | Name        | Hex       | Preview |
 |-------------|-----------|---------|
-| Black Void  | `#050906` | ![color](https://img.shields.io/badge/%20-%23050906.svg?style=flat&logoColor=white) |
-| Neon Green  | `#39FF14` | ![color](https://img.shields.io/badge/%20-%2339FF14.svg?style=flat&logoColor=white) |
+| Black Void  | `#ccc` | ![color](https://img.shields.io/badge/%20-%23050906.svg?style=flat&logoColor=white) |
+| Neon Green  | `#c4bfb2` | ![color](https://img.shields.io/badge/%20-%2339FF14.svg?style=flat&logoColor=white) |
 | Pale Flesh  | `#c4bfb2` | ![color](https://img.shields.io/badge/%20-%23c4bfb2.svg?style=flat&logoColor=white) |
 | Bone White  | `#cccccc` | ![color](https://img.shields.io/badge/%20-%23cccccc.svg?style=flat&logoColor=white) |
 
