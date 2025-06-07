@@ -166,16 +166,18 @@ width: 100%;}
   background-size:40%;
   background-position: right;
   display: flex;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
   box-sizing: border-box;
   text-align: center;
+  gap: 30px;
   background-image: url('Images/Hero-back.webp');
 }
 .Hero-Img{
     display: flex;
-    width: 370px;
+    width: 400px;
 }
 
 .hero::before {
@@ -317,6 +319,8 @@ width: 370px;
     opacity: 0;
   animation: fadeIn 2s ease-in forwards;
   animation-delay: 0.5s;
+  gap:0px;
+   min-height: 0;
 }
 
 .H-R-FLEX {
