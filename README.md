@@ -26,9 +26,9 @@ Welcome to the forbidden archive of cosmic horrors.
 ---
 ## STYLES 
 - 🌈 Background color is #12141b;
-- 🌈 Text color is #ccc for normal text
-- 🌈 Text color #c4bfb2; for formal text and titles
-- 📃 font is 'Cinzel', serif for titles and text
+- 🌈 Text color is `#ccc` for normal text
+- 🌈 Text color `#c4bfb2`; for formal text and titles
+- 📃 font is `'Cinzel'`, `serif` for titles and text
 
 ---
   
