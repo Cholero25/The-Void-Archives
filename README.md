@@ -35,6 +35,10 @@ Welcome to the forbidden archive of cosmic horrors.
 
 
 ---
+## 🖋️ Typography
+
+**Cinzel** – Used for titles and decorative text  
+![Cinzel Font Preview](https://https://fonts.google.com/specimen/Cinzel/font-preview.png)
   
 ## 🛠️ Technologies Used
 
