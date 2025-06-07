@@ -163,7 +163,6 @@ width: 100%;}
 }
 .hero {
   position: relative;
-  min-height: 100vh;
   background-size:40%;
   background-position: right;
   display: flex;
@@ -171,10 +170,12 @@ width: 100%;}
   align-items: center;
   padding: 0 2rem;
   box-sizing: border-box;
+  text-align: center;
   background-image: url('Images/Hero-back.webp');
 }
 .Hero-Img{
-    width: 100%;
+    display: flex;
+    width: 370px;
 }
 
 .hero::before {
@@ -191,7 +192,7 @@ width: 100%;}
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #c4bfb2;
@@ -310,11 +311,13 @@ width: 370px;
   
 .hero{
     background-image: url('Images/Tentacle.webp');
-    background-position: bottom right;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: 100%;
+    opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+  animation-delay: 0.5s;
 }
-
 
 .H-R-FLEX {
     display: none;
