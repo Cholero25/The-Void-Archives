@@ -29,6 +29,7 @@ Welcome to the forbidden archive of cosmic horrors.
 - 🌈 Text color is `#ccc` for normal text
 - 🌈 Text color `#c4bfb2`; for formal text and titles
 - 📃 font is `'Cinzel'`, `serif` for titles and text
+- ![Palette](https://via.placeholder.com/400x50/050906/050906?text=+)
 
 ---
   
