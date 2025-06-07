@@ -36,7 +36,7 @@ Welcome to the forbidden archive of cosmic horrors.
 ---
 ## 🖋️ Typography
 
-###The Void Archives uses the **[Cinzel](https://fonts.google.com/specimen/Cinzel)** font from Google Fonts  
+The Void Archives uses the **[Cinzel](https://fonts.google.com/specimen/Cinzel)** font from Google Fonts  
 for titles and formal text, evoking a classical and arcane feel.
 
 ---
