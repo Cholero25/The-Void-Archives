@@ -33,13 +33,12 @@ Welcome to the forbidden archive of cosmic horrors.
 | Body Text         | `#cccccc`  | ![text](https://img.shields.io/badge/%20-%23cccccc.svg?style=flat&logoColor=black) |
 | Titles & Accents  | `#c4bfb2`  | ![accent](https://img.shields.io/badge/%20-%23c4bfb2.svg?style=flat&logoColor=black) |
 
-
 ---
 ## 🖋️ Typography
 
-**Cinzel** – Used for titles and decorative text  
-![Cinzel Font Preview](https://https://fonts.google.com/specimen/Cinzel/font-preview.png)
-  
+The Void Archives uses the **[Cinzel](https://fonts.google.com/specimen/Cinzel)** font from Google Fonts  
+for titles and formal text, evoking a classical and arcane feel.
+---
 ## 🛠️ Technologies Used
 
 - HTML5
