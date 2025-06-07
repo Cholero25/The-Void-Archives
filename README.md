@@ -29,12 +29,14 @@ Welcome to the forbidden archive of cosmic horrors.
 - 🌈 Text color is `#ccc` for normal text
 - 🌈 Text color `#c4bfb2`; for formal text and titles
 - 📃 font is `'Cinzel'`, `serif` for titles and text
-| Color        | Hex Code   | Preview |
-|--------------|------------|---------|
-| Black Void   | `#050906`  | ![#050906](https://via.placeholder.com/15/050906/050906.png) `#050906` |
-| Neon Green   | `#39FF14`  | ![#39FF14](https://via.placeholder.com/15/39FF14/39FF14.png) `#39FF14` |
-| Pale Flesh   | `#c4bfb2`  | ![#c4bfb2](https://via.placeholder.com/15/c4bfb2/c4bfb2.png) `#c4bfb2` |
-| Bone White   | `#ccc`     | ![#ccc](https://via.placeholder.com/15/cccccc/cccccc.png) `#ccc` |
+## 🎨 Color Palette
+
+| Name        | Hex       | Preview |
+|-------------|-----------|---------|
+| Black Void  | `#050906` | ![color](https://img.shields.io/badge/%20-%23050906.svg?style=flat&logoColor=white) |
+| Neon Green  | `#39FF14` | ![color](https://img.shields.io/badge/%20-%2339FF14.svg?style=flat&logoColor=white) |
+| Pale Flesh  | `#c4bfb2` | ![color](https://img.shields.io/badge/%20-%23c4bfb2.svg?style=flat&logoColor=white) |
+| Bone White  | `#cccccc` | ![color](https://img.shields.io/badge/%20-%23cccccc.svg?style=flat&logoColor=white) |
 
 ---
   
