@@ -283,33 +283,61 @@ width: 100%;}
   font-size: 13px;
   color: #777;
 }
+/* Creatures Page */
+.Main-cards{
+  padding: 35px;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #c7b689;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #000c20;
+  margin: 1rem 0;
+  max-width: 100%;
+}
+.card:hover{
+    border: solid 4px #39FF14;
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.card-img {
+   /* Evita que se colapse */
+  max-width: 200px;
+  height: auto; /* <-- controla aquí el tamaño máximo de la imagen */
+  width: 100%;
+  overflow: hidden;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 
+.card-text-1,.card-text-2,.card-text-3 {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: white;
+}
 
-@media (max-width: 768px) {
-  
-.hamburger {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;}
-  .H-R-FLEX {
-    display: none;
-flex-direction: column;
-flex-wrap: wrap;
-position: absolute;
-top: 90px;
-right: 10px;
-background-color:#12141b;
-padding: 10px;
-border-radius: 5px;
-height: 100vh;
-width: 370px;
+#Creature{
+  color:#c7b689}
+
+.card-text-1{
+  background-color: #0a1f33;
+}
+.card-text-2{
+   background-color: #0a2e1a ;
+}
+.card-text-3{
+  background-color:#3a2f0c ; 
 }
 
 
+/* Responsive */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
   
 .hero{
     background-image: url('Images/Tentacle.webp');
@@ -317,10 +345,11 @@ width: 370px;
     background-repeat: no-repeat;
     background-size: 100%;
     opacity: 0;
+    min-height: 70vh;
   animation: fadeIn 2s ease-in forwards;
   animation-delay: 0.5s;
   gap:0px;
-   min-height: 0;
+
 }
 
 .H-R-FLEX {
@@ -375,4 +404,41 @@ cursor: pointer;
 
 .Hero-Img{
     display: none;
-}}}
+}
+
+  
+.hamburger {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;}
+  .H-R-FLEX {
+    display: none;
+flex-direction: column;
+flex-wrap: wrap;
+position: absolute;
+top: 90px;
+right: 10px;
+background-color:#12141b;
+padding: 10px;
+border-radius: 5px;
+height: 100vh;
+width: 370px;
+}
+
+
+}
+
+@media (max-width: 390px){/* Creatures Page */
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card-img {
+  max-width: 340px;
+}
+.Main-cards{
+  padding: 25px;
+}
+#Creature{
+  text-align: center;
+}}
