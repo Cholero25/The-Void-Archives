@@ -428,7 +428,7 @@ width: 370px;
 
 }
 
-@media (max-width: 390px){/* Creatures Page */
+@media (max-width: 390px) {/* Creatures Page */
 .card {
   display: flex;
   flex-direction: column;
@@ -442,3 +442,18 @@ width: 370px;
 #Creature{
   text-align: center;
 }}
+@media (max-width: 768px){
+ .card {
+  display: flex;
+  flex-direction: column;
+}
+.card-img {
+  max-width: 600px;
+}
+.Main-cards{
+  padding: 25px;
+}
+#Creature{
+  text-align: center;
+} 
+}
