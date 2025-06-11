@@ -315,7 +315,7 @@ width: 100%;}
   display: block;
 }
 
-.card-text-1,.card-text-2,.card-text-3 {
+.card-text-1,.card-text-2,.card-text-3,.card-text-4 {
   flex: 1;
   padding: 1rem;
   font-size: 1.2rem;
@@ -334,11 +334,49 @@ width: 100%;}
 .card-text-3{
   background-color:#3a2f0c ; 
 }
-
+.card-text-4{
+  background-color: #8B1E3F;
+}
+.Powers{
+  display: flex;
+justify-content: center;
+  gap: 25px;
+font-family: 'Cinzel', serif;
+font-weight: bold;
+  flex-wrap: wrap;
+  font-size: 17px;
+}
+.flex-colors{
+  display: flex;
+  gap:15px;
+}
+.L1,.L2,.L3,.L4{
+  width: 60px;
+  border: solid #c7b689;
+  border-radius: 15px;
+}
+.L1{
+  background-color: #0a1f33;
+}
+.L2{
+  background-color: #0a2e1a;
+}
+.L3{
+  background-color: #3a2f0c;
+}
+.L4{
+  background-color: #8B1E3F;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
-  
+
+.Powers{
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px;
+}
+
 .hero{
     background-image: url('Images/Tentacle.webp');
     background-position: right;
