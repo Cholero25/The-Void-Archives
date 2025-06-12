@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header>
+        <nav class="H-FLEX">
+            <div class="H-L-FLEX">
+               <a href="#"><img class="Img-logo" src="Images/Logo-2.png" alt="Logo" loading="lazy"></a>
+                <a class="H-TITLE" href="index.html">THE VOID ARCHIVE</a>
+            </div>
+            <ul class="H-R-FLEX" id="nav-menu">
+                <li><a href="index.html" class="H-LINKS">HOME</a></li>
+                <li><a href="nothing.html" class="H-LINKS">MYTHS</a></li>
+                <li><a href="nothing.html" class="H-LINKS">LOST ARCHIVE</a></li>
+                <li><a href="nothing.html" class="H-LINKS">CONTACT</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">☰</div>
+        </nav>
+    </header>
+<Main class="Nothing-M">
+<img src="Images/404.jfif" class="nothing-img">
+<p class="nothing-T">404</p>
+<p><strong>File not found </strong></p>
+
+<p>The site configured at this address does not contain the requested file.</p>
+
+<p>If this is your site, make sure that the filename case matches the URL as well as any file permissions.
+For root URLs (like http://example.com/) you must provide an index.html file.</p>
+
+<p><a class = nothing-L href="https://docs.github.com/es/pages">Read the full documentation</a> for more information about using <strong>GitHub Pages.</strong> </p>
+
+<p>GitHub Status — @githubstatus</p>
+
+</Main>
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>ABOUT THE ARCHIVE</h3>
+      <p>Cataloging the forbidden. Unveiling what was meant to be forgotten.</p>
+    </div>
+    <div class="footer-column">
+      <h3>EXPLORE</h3>
+      <ul>
+        <li><a href="nothing.html">Creatures</a></li>
+        <li><a href="nothing.html">Myths</a></li>
+        <li><a href="nothing.html">Lost Archive</a></li>
+        <li><a href="nothing.html">Realms</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>CONTACT</h3>
+      <p>summon@voidarchive.com</p>
+      <p>+000 - 000 - 1313</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 The Void Archive. All rites reserved.</p>
+  </div>
+</footer>
+</body>
+<script>
+
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  hamburger.classList.toggle('active'); // 👉 activa la X visual
+  if (hamburger.textContent === '☰') {
+    hamburger.textContent = '✕';
+  } else {
+    hamburger.textContent = '☰';
+  }
+});
+</script>
+</html>

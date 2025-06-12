@@ -155,6 +155,7 @@ width: 100%;}
 .Card-Grid-6{
     width: 100%;
     flex: 1 1 auto ;
+    line-height:1.3;
 }
 
 
@@ -386,6 +387,26 @@ font-weight: bold;
 }
 .L4{
   background-color: #8B1E3F;
+}
+
+/*  Page were nothing exist  */
+
+.Nothing-M{
+  text-align: center;
+  padding: 35px;
+  font-size: 20px;
+  color: rgb(128, 126, 126);
+}
+.nothing-T{
+  font-size: 50px;
+}
+.nothing-L{
+  text-decoration: none;
+  color: rgb(162, 211, 227);
+}
+.nothing-img{
+  width: 120px;
+  border-radius: 50%;
 }
 
 /* Responsive */
