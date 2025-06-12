@@ -16,7 +16,7 @@ header{
      z-index: 5;
 }
 .Img-logo{
-    width: 90px;
+    width: 85px;
 }
 .H-LINKS{
     text-decoration: underline;
@@ -41,7 +41,7 @@ color:#c7b689;
 
 .H-L-FLEX{
     display: flex;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
 }
 .H-R-FLEX{
