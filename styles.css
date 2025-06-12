@@ -16,7 +16,7 @@ header{
      z-index: 5;
 }
 .Img-logo{
-    width: 50px;
+    width: 90px;
 }
 .H-LINKS{
     text-decoration: underline;
@@ -27,7 +27,7 @@ header{
 .H-TITLE{
 text-decoration: none;
 font-family: 'Cinzel', serif;
- color: #ccc;
+color:#c7b689;
     font-size: 30px;
 }
 
@@ -197,7 +197,7 @@ width: 100%;}
   font-size: 3.8rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #c4bfb2;
+ 
 }
 
 .hero-subtitle {
@@ -209,7 +209,7 @@ width: 100%;}
 .hero-description {
   font-size: 1.1rem;
   margin-bottom: 2rem;
-  color: #c4bfb2;
+  color: #d1c091;
 }
 
 .hero-button {
@@ -336,6 +336,15 @@ width: 100%;}
 }
 .card-text-4{
   background-color: #8B1E3F;
+}
+p{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+h2,h1,.title-glosary{
+  color:#c7b689;
+}
+.title-glosary{
+  text-align: center;
+  font-size: 26px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .Powers{
   display: flex;
