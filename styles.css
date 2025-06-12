@@ -502,6 +502,7 @@ padding: 10px;
 border-radius: 5px;
 height: 100vh;
 width: 370px;
+  position: fixed;
 }
 
 
