@@ -419,6 +419,11 @@ font-weight: bold;
 }
 
 /* Responsive */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .Card-Grid-7 {
+    grid-column: 1 / 3; /* o 1 / -1 si quieres que abarque toda la fila disponible */
+  }
+}
 @media (max-width: 768px) {
 
 .Powers{
