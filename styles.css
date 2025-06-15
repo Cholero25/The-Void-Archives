@@ -258,6 +258,15 @@ width: 100%;}
   justify-content: center;
   align-content: center;
 }
+.mini-icon-flex2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  font-size:13px;
+  color: #d1c091;
+  justify-content: flex-end;
+  align-content: center;
+}
 
 .logos{
     width: 100px;
@@ -533,6 +542,7 @@ cursor: pointer;
 
 .card {
   max-height: none;
+  text-align: center;
 }
   
 .hamburger {
@@ -565,7 +575,9 @@ width: 370px;
 .mini-icon{
   display: none;
 }
-
+.mini-icon-flex2{
+  justify-content: center;
+}
 }
 
 
