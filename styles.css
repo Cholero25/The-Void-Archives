@@ -245,6 +245,10 @@ width: 100%;}
 .mini-icon{
   width: 40px;
 }
+.mini-icon2{
+  width: 40px;
+  display: none;
+}
 .mini-icon-flex{
   display: flex;
   flex-wrap: wrap;
@@ -437,6 +441,9 @@ font-weight: bold;
   width: 120px;
   border-radius: 50%;
 }
+.responsive-text::after{
+  content: attr(data-desktop);
+}
 
 /* Responsive */
 @media (min-width: 769px) and (max-width: 1023px) {
@@ -547,7 +554,20 @@ width: 370px;
   position: fixed;
 }
 
+.responsive-text::after {
+    content: attr(data-mobile);
+  }
+
+.mini-icon2{
+  width: 40px;
+  display: block;
 }
+.mini-icon{
+  display: none;
+}
+
+}
+
 
 @media (max-width: 390px) {/* Creatures Page */
 .card {
