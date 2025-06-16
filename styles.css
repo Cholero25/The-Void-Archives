@@ -361,7 +361,7 @@ width: 100%;}
 }
 .card-img {
    /* Evita que se colapse */
-  max-width: 200px;
+  max-width: 210px;
   height: auto; /* <-- controla aquí el tamaño máximo de la imagen */
   width: 100%;
   overflow: hidden;
@@ -373,11 +373,11 @@ width: 100%;}
 }
 
 .card-text-1,.card-text-2,.card-text-3,.card-text-4 {
-  flex: 1;
+  flex: 1 ;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: white; /* esto empuja el "Click..." hacia abajo */
   max-height: 100%;
 }
@@ -468,6 +468,12 @@ font-weight: bold;
     grid-column: 1 / 3; /* o 1 / -1 si quieres que abarque toda la fila disponible */
   }
 }
+@media (max-width: 1000px) {
+
+.card{
+  max-height: 300px;
+}
+}
 @media (max-width: 768px) {
 
 .Powers{
@@ -532,9 +538,7 @@ cursor: pointer;
     grid-column: 1/2;
     background-image: url(Images/fearandhung.png);
   }
-  .card-text-1,.card-text-2,.card-text-3,.card-text-4{
-    max-height: 100%;
-  }
+ 
 /* Muestra la X */
 #hamburger.active::before {
   content: "✕";
@@ -554,7 +558,7 @@ cursor: pointer;
 .card {
   max-height: none;
   text-align: center;
-  height: auto;
+  max-height: auto;
 }
   
 .hamburger {
