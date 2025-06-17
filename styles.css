@@ -461,6 +461,9 @@ font-weight: bold;
 .responsive-text::after{
   content: attr(data-desktop);
 }
+.card-links{
+  text-decoration: none;
+}
 
 /* Responsive */
 @media (min-width: 769px) and (max-width: 1023px) {
