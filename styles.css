@@ -712,10 +712,6 @@ width: 370px;
     background-image: url("Images/yellowland@2x.webp");
     /* Opcional: ajustar background-size si la relación de aspecto cambia */
   }
-    .Card-Grid-4 {
-    background-image: url("Images/yellowland@2x.webp");
-    /* Opcional: ajustar background-size si la relación de aspecto cambia */
-  }
     .Card-Grid-5 {
     background-image: url("Images/dead-space2@2x.webp");
     /* Opcional: ajustar background-size si la relación de aspecto cambia */
@@ -724,7 +720,7 @@ width: 370px;
     background-image: url("Images/dead-space2@2x.webp");
     /* Opcional: ajustar background-size si la relación de aspecto cambia */
   }
-    .Card-Grid-6 {
+    .Card-Grid-7 {
     background-image: url("Images/fear@2x.png");
     /* Opcional: ajustar background-size si la relación de aspecto cambia */
   }
