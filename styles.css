@@ -81,7 +81,7 @@ flex-wrap: wrap;}
   gap: 2rem;
   background-image: url('Images/Hero-back.webp');
 }
-/*--------------Hero Image Class-------------------*/
+/*--------------Hero Image Class and animation-------------------*/
 .Hero-Img{
     max-width: 24rem;
 }
@@ -271,19 +271,12 @@ max-width: 100%;}
     background-size: cover;
   }
   .Card-Grid-6{
-     background-image: url("Images/WOTA2.webp");
+     background-image: url("Images/fearandhung.png");
     background-position: 70% 30%;
        background-repeat: no-repeat;
     background-size: cover;
   }
-  .Card-Grid-7{
-    display: grid;
-    grid-column: 1/4;
-    background-image: url("Images/fear.png");
-    background-position: 70% 30%;
-       background-repeat: no-repeat;
-    background-size: cover;
-  }
+
 
 /*--------------Div for the icon next to the click here text , this is for the desktop------------------*/
 
@@ -295,6 +288,11 @@ max-width: 100%;}
 .mini-icon2{
   width: 3rem;
   display: none;
+}
+
+/*--------------P with atribute click here and tap here ------------------*/
+.responsive-text::after{
+  content: attr(data-desktop);
 }
 
 /*--------------flex that controls text and icon ------------------*/
@@ -394,79 +392,9 @@ max-width: 100%;}
 
            /*-------------Creature Cards styles-------------------*/
 
+/*-------------selector that controls four power leves-------------------*/
 
 
-
-
-
-.Main-cards{
-  padding: 35px;
-}
-.card {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid #c7b689;
-  border-radius: 8px;
-  overflow:hidden;
-  background-color: #000c20;
-  margin: 1rem 0;
-  max-height:240px;
-}
-
-.card:hover{
-    border: solid 4px #39FF14;
-  cursor: pointer;
-  transform: scale(1.03);
-}
-.card-img {
-   /* Evita que se colapse */
-  max-width: 210px;
-  height: auto; /* <-- controla aquí el tamaño máximo de la imagen */
-  width: 100%;
-  overflow: hidden;
-}
-.card-img img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.card-text-1,.card-text-2,.card-text-3,.card-text-4 {
-  flex: 1 ;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.2rem;
-  color: white; /* esto empuja el "Click..." hacia abajo */
-  max-height: 100%;
-}
-
-#Creature{
-  color:#c7b689;
-margin-top: 0px;
-margin-bottom: 0px;}
-
-.card-text-1{
-  background-color: #0a1f33;
-}
-.card-text-2{
-   background-color: #0a2e1a ;
-}
-.card-text-3{
-  background-color:#3a2f0c ; 
-}
-.card-text-4{
-  background-color: #8B1E3F;
-}
-p{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
-h2,h1,.title-glosary{
-  color:#c7b689;
-}
-.title-glosary{
-  text-align: center;
-  font-size: 26px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 .Powers{
   display: flex;
 justify-content: center;
@@ -476,15 +404,19 @@ font-weight: bold;
   flex-wrap: wrap;
   font-size: 1rem;
 }
+/*-------------selector that controls content inside each power level-------------------*/
 .flex-colors{
   display: flex;
   gap:15px;
 }
-.L1,.L2,.L3,.L4{
+/*-------------Selector to style the box colors next to the power category-------------------*/
+.L1,.L2,.L3,.L4{ /*--This one styles the border-*/
   width: 60px;
   border: solid #c7b689;
   border-radius: 15px;
 }
+
+ /*--This selectors adds the color to each box-*/
 .L1{
   background-color: #0a1f33;
 }
@@ -498,71 +430,153 @@ font-weight: bold;
   background-color: #8B1E3F;
 }
 
+
+/*-------------Class controls the main content of every creature page-------------------*/
+.Main-cards{
+  padding: 35px;
+}
+
+/*-------------Contains everything on the creature card-------------------*/
+.card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #c7b689;
+  border-radius: 8px;
+  overflow:hidden;
+  background-color: #000c20;
+  margin: 1rem 0;
+  max-height:270px;
+}
+/*-------------Hover for creatures card-------------------*/
+.card:hover{
+    border: solid 2px #39FF14;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
+}
+/*-------------Style to remove blue line on the a selector-------------------*/
+.card-links{
+  text-decoration: none;
+}
+
+/*------------Container Where creature images are -------------------*/
+.card-img {
+   /* Evita que se colapse */
+  max-width: 210px;
+  height: auto; /* <-- controla aquí el tamaño máximo de la imagen */
+  width: 100%;
+  overflow: hidden;
+}
+
+/*------------The Image inside the container-------------------*/
+.card-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/*------------Every conteiner text content -------------------*/
+.card-text{
+  flex: 1 ;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  color: white; /* esto empuja el "Click..." hacia abajo */
+  max-height: 100%;
+}
+/*------------Main Title for the container-------------------*/
+#Creature{
+  color:#c7b689;
+margin-top: 0px;
+margin-bottom: 0px;}
+
+
+/*------------Selector for each creature power level-------------------*/
+.Lesser{
+  background-color: #0a1f33;
+}
+.Eldritch{
+   background-color: #0a2e1a ;
+}
+.Voidborn{
+  background-color:#3a2f0c ; 
+}
+.Outer{
+  background-color: #8B1E3F;
+}
+
+/*----------This is where the glosary of each beast starts -----------------*/
+
+
+/*------------Font for cards and diferent selectors------------------*/
+p{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+h2,h1,.title-glosary{
+  color:#c7b689;
+}
+.title-glosary{
+  text-align: center;
+  font-size: 26px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
 /*  Page were nothing exist  */
 
+
+/*------------selector for the content inside the main content------------------*/
 .Nothing-M{
   text-align: center;
   padding: 35px;
   font-size: 1.3rem;
   color: rgb(128, 126, 126);
 }
+/*------------selector to adjust title of the page------------------*/
 .nothing-T{
   font-size: 50px;
 }
+
+/*------------selector to adjust important links------------------*/
 .nothing-L{
   text-decoration: none;
   color: rgb(162, 211, 227);
 }
+/*------------selector to adjust the image------------------*/
 .nothing-img{
   width: 120px;
   border-radius: 50%;
 }
-.responsive-text::after{
-  content: attr(data-desktop);
-}
-.card-links{
-  text-decoration: none;
-}
+
+
+
 
 /* Responsive */
+
+/*  Created to specify a specific width on bigger screens  */
+
 @media (min-width: 2000px) {
   .wrapper {
     max-width: 1800px;
     margin: 2.5rem auto;
   }
 }
-@media (min-width: 769px) and (max-width: 1023px) {
-  .Card-Grid-7 {
-    grid-column: 1 / 3; /* o 1 / -1 si quieres que abarque toda la fila disponible */
-  }
-}
+
+/*  Break point created to adjust creature card and a medium size screen cause it was hidding click here line  */
 @media (max-width: 1000px) {
 
 .card{
   max-height: 300px;
 }
 }
+
+/*  Created to become it more responsive  on phone*/
 @media (max-width: 768px) {
 
-.Powers{
-  flex-direction: column;
-  justify-content: center;
-  padding: 35px;
-}
 
-.hero{
-    background-image: url('Images/Tentacle.webp');
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    opacity: 0;
-    min-height: 70vh;
-  animation: fadeIn 2s ease-in forwards;
-  animation-delay: 0.5s;
-  gap:0px;
 
-}
-
+/*  List items on header , this is to style the list inside the hamburger menu*/
 .H-R-FLEX {
     display: none;
     flex-direction: column;
@@ -576,65 +590,10 @@ font-weight: bold;
      background-color: #09110b;
      justify-content: center;
   }
-.Main-Grid{
-    margin: 0;
-    padding: 0;
-}
-.mini-wrapper{
-    width: 100%;
-}
 
 
-
-.H-R-FLEX.active {
-    display: flex;
-  }
-.H-FLEX{
-    flex-wrap: nowrap;
-}
-.H-TITLE{
-    font-size: 25px;
-}
-.H-R-FLEX li{
-cursor: pointer;
-}
- .H-R-FLEX.active {
-    display: flex;
-  }
-
-.Card-Grid-7{
-    display: grid;
-    grid-column: 1/2;
-    background-image: url(Images/fearandhung.png);
-  }
- 
-/* Muestra la X */
-#hamburger.active::before {
-  content: "✕";
-  color: black;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.Main-Grid{
-    grid-template-columns: 1fr ;
-}
-
-.Hero-Img{
-    display: none;
-}
-
-.card {
-  max-height: none;
-  text-align: center;
-  max-height: auto;
-}
-  
-.hamburger {
-    display: block;
-    cursor: pointer;}
-  .H-R-FLEX {
-    display: none;
+.H-R-FLEX {
+display: none;
 flex-direction: column;
 flex-wrap: wrap;
 position: absolute;
@@ -646,19 +605,106 @@ border-radius: 5px;
 height: 100vh;
 width: 370px;
   position: fixed;
+}   
+
+
+
+/*  When hamburger is active items will use flex*/
+.H-R-FLEX.active {
+    display: flex;
+  }
+/*  Holds the hamburger in place adjust the size of it*/
+.H-FLEX{
+    flex-wrap: nowrap;
+    font-size: 1.4rem;
 }
 
+/* Muestra la X when hamburger is open */
+#hamburger.active::before {
+  content: "✕";
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Makes hamburger appear*/
+.hamburger {
+    display: block;
+    cursor: pointer;}
+
+/*  Adjust size for header hero*/
+.H-TITLE{
+    font-size: 1.5rem;
+}
+/*  Changes the cursor type*/
+.H-R-FLEX li{
+cursor: pointer;
+}
+
+
+
+
+/*  Adjusting main hero on phone and animation*/
+.hero{
+    background-image: url('Images/Tentacle.webp');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0;
+    min-height: 70vh;
+  animation: fadeIn 2s ease-in forwards;
+  animation-delay: 0.5s;
+  gap:0px;
+
+}
+/*  Adjust display for desktop hero image*/
+.Hero-Img{
+    display: none;
+}
+
+/*  Adjust grid size on landing page card*/
+.Main-Grid{
+
+    grid-template-columns: 1fr ;
+}
+
+/*  Adjust grid size of content on card*/
+.mini-wrapper{
+    width: 100%;
+}
+
+/*---------------------  Creatures Card page------------- */
+
+/*  Adjust the grid on the power level divs*/
+.Powers{
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px;
+}
+ 
+
+
+.card {
+  max-height: none;
+  text-align: center;
+  max-height: auto;
+}
+  
+/*  Adjust tap here line*/
 .responsive-text::after {
     content: attr(data-mobile);
   }
 
+  /*  Adjust tap here image*/
 .mini-icon2{
   max-width: 40px;
   display: block;
 }
+ /*  eliminates the desktop image*/
 .mini-icon{
   display: none;
 }
+ /* adjust icon and line are located */
 .mini-icon-flex2{
   justify-content: center;
   padding: none;
@@ -685,6 +731,8 @@ width: 370px;
 } 
 
 }
+
+/*-------------Media Created for cards on landing with higher resolution-------------------*/
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
   /* High-DPI specific styles */
@@ -717,11 +765,8 @@ width: 370px;
     /* Opcional: ajustar background-size si la relación de aspecto cambia */
   }
     .Card-Grid-6 {
-    background-image: url("Images/WOTA2@2x.webp");
+    background-image: url("Images/fearandhung.png");
     /* Opcional: ajustar background-size si la relación de aspecto cambia */
   }
-    .Card-Grid-7 {
-    background-image: url("Images/fear@2x.png");
-    /* Opcional: ajustar background-size si la relación de aspecto cambia */
-  }
+  
 }
