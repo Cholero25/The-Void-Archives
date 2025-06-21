@@ -551,6 +551,85 @@ h2,h1,.title-glosary{
 
 
 
+/*------------BEstiary information HTML----------------*/
+
+.dagon,.dagon1{text-align: center;
+        font-size: 1.5rem;}
+        .dagon1{
+            font-size: 3rem;
+        }
+        .dagon{
+          color: #ccc;
+        }
+        .main-dagon{
+         display: grid;
+         grid-template-columns: 300px 1fr ;
+         gap:2rem;
+         justify-content: center; 
+         max-width: 1100px;
+         padding: 3rem;
+         margin: auto;
+        background-color: #0a1f33;
+         border: 3px solid #142b41 ;
+      box-shadow: 0 0 20px black;
+      font-size: 1.1rem;
+    color: #ccc;}
+        .img-glosary{
+            max-width: 100%;  
+            border: 3px solid #142b41 ;
+      box-shadow: 0 0 10px black;
+        }
+        .img-glosary2{
+            max-width: 100%;
+        }
+        .text-bottom{
+            padding-bottom: 0.2rem;
+            border-bottom: 3px solid #1f3448 
+        }
+        .container-card{
+            padding: 30px 30px;
+        }
+        .glosary-ul li{
+            margin: 1rem;
+        }
+        .References{
+            border: 3px solid #142b41 ;
+            padding-left: 10px;
+        }
+        .Insignia{
+          border: 3px solid #142b41 ;
+            padding-left: 10px;
+        }
+        .left-items{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .right-dagon > div,section{
+            margin-bottom: 1.1rem;
+        }
+        blockquote{
+            border-left: 10px solid #253748;
+            background-color: #122b42;
+            padding: 1rem;
+        }
+        .clasification-ul li{
+            margin:0.6rem;
+            list-style:square;
+        }
+        .dagon{
+            font-size: 1.5rem;
+        }
+        .glosary-links{
+            text-decoration: underline;
+            color: aliceblue;
+        }
+        .glosary-links:hover{
+            color:#39FF14;
+        }
+
+
+
 
 /* Responsive */
 
@@ -730,6 +809,39 @@ cursor: pointer;
   text-align: center;
 } 
 
+/* adjust creatures bestiary hmtl*/
+  .main-dagon {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "content"
+      "references"
+      "insignia";
+    padding: 1rem;
+  }
+  
+  .dagon1 {
+    grid-area: header;
+  }
+  
+  .right-dagon {
+    grid-area: content;
+  }
+  
+  .References {
+    grid-area: references;
+     /* Adds space between content and references */
+    order: 3; /* Ensures it appears last */
+  }
+  .Insignia{
+    grid-area: insignia;
+    order: 4;
+  }
+  
+  .left-items {
+    display: contents; /* Allows grid items to flow naturally in the grid */
+  }
 }
 
 /*-------------Media Created for cards on landing with higher resolution-------------------*/
