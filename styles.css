@@ -561,7 +561,8 @@ h2,h1,.title-glosary{
         .dagon{
           color: #ccc;
         }
-        .main-dagon{
+        /* for weaker class*/
+        .main-blue{
          display: grid;
          grid-template-columns: 300px 1fr ;
          gap:2rem;
@@ -574,17 +575,22 @@ h2,h1,.title-glosary{
       box-shadow: 0 0 20px black;
       font-size: 1.1rem;
     color: #ccc;}
-        .img-glosary{
+       
+
+        .img-glosary-blue{
             max-width: 100%;  
             border: 3px solid #142b41 ;
       box-shadow: 0 0 10px black;
         }
         .img-glosary2{
             max-width: 100%;
+            display: flex;
+            justify-self: center;
+            align-self: center;
         }
-        .text-bottom{
+        .text-bottom-blue{
             padding-bottom: 0.2rem;
-            border-bottom: 3px solid #1f3448 
+            border-bottom: 3px solid #1f3448;
         }
         .container-card{
             padding: 30px 10px;
@@ -592,11 +598,11 @@ h2,h1,.title-glosary{
         .glosary-ul li{
             margin: 1rem;
         }
-        .References{
+        .References-blue{
             border: 3px solid #142b41 ;
             padding-left: 10px;
         }
-        .Insignia{
+        .Insignia-blue{
           border: 3px solid #142b41 ;
             padding-left: 10px;
         }
@@ -608,7 +614,7 @@ h2,h1,.title-glosary{
         .right-dagon > div,section{
             margin-bottom: 1.1rem;
         }
-        blockquote{
+        .bubble-blue-text{
             border-left: 10px solid #253748;
             background-color: #122b42;
             padding: 1rem;
@@ -626,6 +632,45 @@ h2,h1,.title-glosary{
         }
         .glosary-links:hover{
             color:#39FF14;
+        }
+
+
+        /* for more powerful class*/
+        .main-green{
+         display: grid;
+         grid-template-columns: 300px 1fr ;
+         gap:2rem;
+         justify-content: center; 
+         max-width: 1100px;
+         padding: 3rem;
+         margin: auto;
+        background-color: #0a2e1a ;
+         border: 3px solid #103420  ;
+      box-shadow: 0 0 20px #0a2e1a ;
+      font-size: 1.1rem;
+    color: #ccc;
+        }
+        .bubble-green-text{
+            border-left: 10px solid #1b402b;
+            background-color: #103420;
+            padding: 1rem;
+        }
+        .References-green{
+            border: 3px solid #1b402b;
+            padding-left: 10px;
+        }
+        .Insignia-green{
+          border: 3px solid #1b402b;
+            padding-left: 10px;
+        }
+        .text-bottom-green{
+          padding-bottom: 0.2rem;
+          border-bottom: 3px solid #1b402b;
+        }
+        .img-glosary-green{
+            max-width: 100%;  
+            border:3px solid #103420;
+      box-shadow: 0 0 10px black;
         }
 
 
@@ -842,7 +887,18 @@ cursor: pointer;
   .left-items {
     display: contents; /* Allows grid items to flow naturally in the grid */
   }
+  .main-green{
+   display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "content"
+      "references"
+      "insignia";
+    padding: 1rem;
 }
+}
+
 
 /*-------------Media Created for cards on landing with higher resolution-------------------*/
 
