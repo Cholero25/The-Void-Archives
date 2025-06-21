@@ -855,7 +855,7 @@ cursor: pointer;
 } 
 
 /* adjust creatures bestiary hmtl*/
-  .main-dagon {
+  .main-blue {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -897,6 +897,7 @@ cursor: pointer;
       "insignia";
     padding: 1rem;
 }
+
 }
 
 
