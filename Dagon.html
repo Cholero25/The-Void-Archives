@@ -28,7 +28,7 @@
 <!-----------------------Main---------------------------------->
     
 <!-----------------------Title and sub title---------------------------------->
-        <h2 class="dagon1"> Dagon <h2><!------------Title above the box-------------->
+        <h2 class="dagon1"> Dagon </h2><!------------Title above the box-------------->
     <em class="dagon">
         <p>"The Abyssal Monarch"</p>
     </em>
@@ -153,4 +153,19 @@
   </div>
 </footer>
 </body>
+<script>
+
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  hamburger.classList.toggle('active'); // 👉 activa la X visual
+  if (hamburger.textContent === '☰') {
+    hamburger.textContent = '✕';
+  } else {
+    hamburger.textContent = '☰';
+  }
+});
+</script>
 </html>

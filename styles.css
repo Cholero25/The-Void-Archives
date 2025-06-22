@@ -672,8 +672,43 @@ h2,h1,.title-glosary{
             border:3px solid #103420;
       box-shadow: 0 0 10px black;
         }
-
-
+        /* for more more powerful class*/
+         .main-brown{
+         display: grid;
+         grid-template-columns: 300px 1fr ;
+         gap:2rem;
+         justify-content: center; 
+         max-width: 1100px;
+         padding: 3rem;
+         margin: auto;
+        background-color: #3a2f0c  ;
+         border: 3px solid #453c1e   ;
+      box-shadow: 0 0 20px #3d320e  ;
+      font-size: 1.1rem;
+    color: #ccc;
+        }
+        .bubble-brown-text{
+            border-left: 10px solid #453c1e ;
+            background-color:#3f3512; 
+            padding: 1rem;
+        }
+        .References-brown{
+            border: 3px solid #453c1e;
+            padding-left: 10px;
+        }
+        .Insignia-brown{
+          border: 3px solid #453c1e;
+            padding-left: 10px;
+        }
+        .text-bottom-brown{
+          padding-bottom: 0.2rem;
+          border-bottom: 3px solid #453c1e;
+        }
+        .img-glosary-brown{
+            max-width: 100%;  
+            border:3px solid #453c1e;
+      box-shadow: 0 0 10px black;
+        }
 
 
 /* Responsive */
@@ -897,7 +932,16 @@ cursor: pointer;
       "insignia";
     padding: 1rem;
 }
-
+.main-brown{
+   display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "content"
+      "references"
+      "insignia";
+    padding: 1rem;
+}
 }
 
 
