@@ -769,6 +769,11 @@ h2,h1,.title-glosary{
 .card{
   max-height: 300px;
 }
+
+.Main-Grid{
+
+    grid-template-columns: repeat(2,1fr) ;
+}
 }
 
 /*  Created to become it more responsive  on phone*/
