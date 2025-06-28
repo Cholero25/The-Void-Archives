@@ -761,6 +761,9 @@ h2,h1,.title-glosary{
     max-width: 1800px;
     margin: 2.5rem auto;
   }
+  .Hero-Img{
+    max-width: 34rem;
+}
 }
 
 /*  Break point created to adjust creature card and a medium size screen cause it was hidding click here line  */
