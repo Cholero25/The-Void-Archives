@@ -73,7 +73,7 @@ background-size: cover; /* Cambiado de 40% a cover para mejor adaptación */
 background-position: center right; /* Mejor posicionamiento */
 display: flex;
 min-height: 80vh;
-justify-content: space-between; /* Cambiado de center a space-between */
+justify-content: space-around; /* Cambiado de center a space-between */
 align-items: center;
 padding: 0 5%; /* Usar porcentaje para mejor responsividad */
 box-sizing: border-box;
