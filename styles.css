@@ -85,7 +85,7 @@ overflow: hidden;
 /*--------------Hero Image Class and animation-------------------*/
 .Hero-Img{
 max-width: 35vw; /* Usar viewport width para mejor escalado */
-min-width: 350px; /* Mínimo para que no se haga muy pequeña */
+min-width: 300px; /* Mínimo para que no se haga muy pequeña */
 height: auto;
 margin-right: 5%;
 align-self: center;
