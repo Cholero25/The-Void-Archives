@@ -89,7 +89,26 @@ min-width: 380px; /* Mínimo para que no se haga muy pequeña */
 height: auto;
 margin-right: 5%;
 align-self: center;
+ filter: drop-shadow(0 0 20px rgba(132, 181, 144, 0.2));
 }
+
+  .Hero-Item {
+    position: relative;
+  height: 100%;
+  pointer-events: none; /* no bloquea clics */
+  z-index: 2;
+}
+ .Hero-Item::before{
+    content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 1rem;
+  max-width: 100vh;
+ }
 
 .fade-in {
 opacity: 0;
@@ -860,7 +879,9 @@ cursor: pointer;
 
 /*  Adjusting main hero on phone and animation*/
 .hero{
+
   background-image: url('Images/Tentacle.webp');
+   filter: drop-shadow(0 0 20px rgba(132, 181, 144, 0.2));
   background-position: right;
   background-repeat: no-repeat;
   background-size: 100%;
