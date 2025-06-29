@@ -85,7 +85,7 @@ overflow: hidden;
 /*--------------Hero Image Class and animation-------------------*/
 .Hero-Img{
 max-width: 35vw; /* Usar viewport width para mejor escalado */
-min-width: 300px; /* Mínimo para que no se haga muy pequeña */
+min-width: 380px; /* Mínimo para que no se haga muy pequeña */
 height: auto;
 margin-right: 5%;
 align-self: center;
@@ -114,7 +114,7 @@ z-index: 1;
 .hero-content {
 position: relative;
 z-index: 2;
-max-width: 600px; /* Limita el ancho del texto */
+max-width: 540px; /* Limita el ancho del texto */
 margin-left: 5%; /* Espaciado consistente */
 }
 /*--------------Class that controls the big title on the hero-------------------*/
