@@ -78,7 +78,6 @@ align-items: center;
 padding: 0 5%; /* Usar porcentaje para mejor responsividad */
 box-sizing: border-box;
 text-align: left; /* Alineación izquierda para mejor legibilidad */
-gap: 2rem;
 background-image: url('Images/Hero-back.webp');
 max-width: 100%;
 overflow: hidden;
@@ -86,7 +85,7 @@ overflow: hidden;
 /*--------------Hero Image Class and animation-------------------*/
 .Hero-Img{
 max-width: 35vw; /* Usar viewport width para mejor escalado */
-min-width: 370px; /* Mínimo para que no se haga muy pequeña */
+min-width: 350px; /* Mínimo para que no se haga muy pequeña */
 height: auto;
 margin-right: 5%;
 align-self: center;
