@@ -76,7 +76,7 @@ min-height: 80vh;
 max-width: 100%;
 justify-content: space-around; /* Cambiado de center a space-between */
 align-items: center;
-padding: 0 7%; /* Usar porcentaje para mejor responsividad */
+padding: 2rem 7%; /* Usar porcentaje para mejor responsividad */
 box-sizing: border-box;
 text-align: left; /* Alineación izquierda para mejor legibilidad */
 background-image: url('Images/Hero-back.webp');
@@ -85,7 +85,7 @@ overflow: hidden;
 }
 /*--------------Hero Image Class and animation-------------------*/
 .Hero-Img{
-max-width: 35vw; /* Usar viewport width para mejor escalado */
+max-width: 40vw; /* Usar viewport width para mejor escalado */
 min-width: 380px; /* Mínimo para que no se haga muy pequeña */
 height: auto;
 margin-right: 5%;
