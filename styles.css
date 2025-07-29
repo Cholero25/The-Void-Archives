@@ -634,6 +634,10 @@ border-radius: 50%;
       .Insignia-blue{
         border: 3px solid #142b41 ;
           padding-left: 10px;
+          flex-direction: column;
+          display: flex;
+          justify-content: center;
+          align-content: center;
       }
       .left-items{
           display: flex;
