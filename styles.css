@@ -462,6 +462,9 @@ background-color: #8B1E3F;
 /*-------------Class controls the main content of every creature page-------------------*/
 .Main-cards{
 padding: 35px;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 /*-------------Contains everything on the creature card-------------------*/
@@ -473,7 +476,9 @@ border-radius: 8px;
 overflow:hidden;
 background-color: #000c20;
 margin: 1rem 0;
-max-height:270px;
+justify-content: center;
+max-width: 68rem;
+max-height:250px;
 }
 /*-------------Hover for creatures card-------------------*/
 .card:hover{
@@ -512,6 +517,7 @@ flex-direction: column;
 font-size: 1.2rem;
 color: white; /* esto empuja el "Click..." hacia abajo */
 max-height: 100%;
+max-width: 100%;
 }
 /*------------Main Title for the container-------------------*/
 #Creature{
@@ -952,6 +958,7 @@ display: none;
 justify-content: center;
 padding: none;
 max-width: 100%;
+max-height: 100%;
 margin-top: 0;
 }
 
