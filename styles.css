@@ -974,10 +974,9 @@ max-height: none;
 text-align: center;
 height: auto;
 box-sizing: border-box; 
-max-width: 500px;
 }
 .card-img {
-max-width: 800px;
+max-width: 700px;
 height: 400px;
 }
 .Main-cards{
