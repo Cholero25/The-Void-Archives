@@ -477,7 +477,7 @@ overflow:hidden;
 background-color: #000c20;
 margin: 1rem 0;
 justify-content: center;
-max-width: 100%;
+max-width: 65rem;
 max-height:250px;
   box-sizing: border-box;      /* Incluye padding en el ancho total */
     overflow: hidden;            /* Evita desbordamiento */
@@ -940,6 +940,7 @@ padding: 35px;
 .card {
 max-height: none;
 text-align: center;
+max-width: 100%;
 }
 
 /*  Adjust tap here line*/
