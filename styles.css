@@ -941,7 +941,6 @@ padding: 35px;
 .card {
 max-height: none;
 text-align: center;
-max-height: auto;
 }
 
 /*  Adjust tap here line*/
@@ -975,9 +974,11 @@ max-height: none;
 text-align: center;
 height: auto;
 box-sizing: border-box; 
+max-width: 500px;
 }
 .card-img {
-max-width: 600px;
+max-width: 800px;
+height: 400px;
 }
 .Main-cards{
 padding: 25px;
