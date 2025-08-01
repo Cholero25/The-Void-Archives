@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <title>The Void Archives</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="Images/Logo3.ico">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" type="image/x-icon" href="Images/LogoIco.ico" alt="Logo Title">
 </head>
 <body>
   <!-------------------------------Header----------------------------------------------->
     <header>
         <nav class="H-FLEX">
             <div class="H-L-FLEX">
-               <a href="#"><img class="Img-logo" src="Images/Logo2.png" alt="Logo" loading="lazy"></a>
+               <a href="#"><img class="Img-logo" src="Images/Logo.webp" alt="Logo" loading="lazy"></a>
                 <a class="H-TITLE" href="index.html">THE VOID ARCHIVE</a>
             </div>
             <ul class="H-R-FLEX" id="nav-menu">
@@ -38,7 +38,7 @@
     <a href="nothing.html" class="hero-button ">ENTER THE ARCHIVE</a>
   </div>
   <div class="Hero-Item">
-    <img src="Images/hero-item-4.png" loading="lazy" class="Hero-Img fade-in " alt="hero-item">
+    <img src="Images/Hero1.png" loading="lazy" class="Hero-Img fade-in " alt="Hero octopus creature">
   </div>
   <!------------------------Main Cards------------------------->
  </section>
@@ -58,17 +58,19 @@
       <!------------------------First Card------------------------->
         <div class="Card-Grid-1">
            <!------------------------Link and content , this is what makes it clickable ------------------------->
-            <a href="Lovecraft.html" class="m-links">
+            <a href="/Worlds/Lovecraft/Lovecraft.html" class="m-links">
               <div class="mini-wrapper">
-                <img src="Images/Lovecrafttrans.png" loading="lazy" class="logos" alt="lovecraft-logo">
+                <img src="Images/LovecraftCoin.png" loading="lazy" class="logos" alt="Coin for Lovecraft world">
                 <h2>MISKATONIC UNIVERSITY ARCHIVES</h2>
                 <p>Delve into forbidden tomes and uncover ancient entities beyond human comprehension — a catalog of horrors lurking in the void.</p>
              <!------------------------Last line that says click or tap here ------------------------->   
-                <div class="mini-icon-flex">
-                  <img class="mini-icon" src="Images/Mini Icon.png">
-                  <img class="mini-icon2" src="Images/pointhand.png">
-                  <p class="responsive-text" data-mobile="Tap the card for more information" data-desktop="Click the card for more information" ></p>
+                <div class="mini-icon-flex-desk">
+                  <img class="mini-icon" src="Images/Mini Icon.png"><p>Click the card for more information</p>
                 </div>
+
+                <div class="mini-icon-flex-small">
+                  <img class="mini-icon" src="Images/pointhand.png"> <p>Tap the card for more information</p>
+                </div> 
 
               </div>
 
@@ -78,18 +80,22 @@
       <!------------------------Second Card------------------------->
         <div class="Card-Grid-2">
       <!------------------------Link and content , this is what makes it clickable ------------------------->
-          <a href="Bloodborne.html" class="m-links"> 
+          <a href="/Worlds/Bloodborne/Bloodborne.html" class="m-links"> 
             
             <div class="mini-wrapper">
-                <img src="Images/Bloodbornelogo.png"  loading="lazy" class="logos" alt="bloodborne-logo">
+                <img src="Images/Bloodbornelogo.png"  loading="lazy" class="logos" alt="Coin for Bloodborne world">
                 <h2>YHARNAM ARCHIVES</h2>
                 <p>Step into the blood-soaked streets of Yharnam — a city veiled in madness, where eldritch beasts roam and every shadow hides a nightmare</p>
               <!------------------------Last line that says click or tap here ------------------------->   
-                <div class="mini-icon-flex">
-                  <img class="mini-icon" src="Images/Mini Icon.png">
-                  <img class="mini-icon2" src="Images/pointhand.png">
-                  <p class="responsive-text" data-mobile="Tap the card for more information" data-desktop="Click the card for more information" ></p>
+                <div class="mini-icon-flex-desk">
+                  <img class="mini-icon" src="Images/Mini Icon.png"><p>Click the card for more information</p>
                 </div>
+
+                <div class="mini-icon-flex-small">
+                  <img class="mini-icon" src="Images/pointhand.png"> <p>Tap the card for more information</p>
+                </div> 
+
+
             </div>
 
           </a>
@@ -100,17 +106,21 @@
         <!------------------------Third Card------------------------->
       <div class="Card-Grid-3">
           <!------------------------Link and content , this is what makes it clickable ------------------------->
-           <a href="Warhammer.html" class="m-links"> 
+           <a href="Worlds/Warhammer/Warhammer.html" class="m-links"> 
             <div class="mini-wrapper">
-                <img src="Images/Warhammerlogo.png" loading="lazy" class="logos" alt="warhammer-logo">
+                <img src="Images/Warhammerlogo.png" loading="lazy" class="logos" alt="Coin for Warhammer world">
                 <h2>IMPERIUM ARCHIVES</h2>
                 <p>Enter the grim darkness of the far future — where humanity clings to survival amidst ancient xenos, daemonic horrors, and endless war. Archive the unthinkable.</p>
            <!------------------------Last line that says click or tap here ------------------------->  
-                <div class="mini-icon-flex">
-                  <img class="mini-icon" src="Images/Mini Icon.png">
-                  <img class="mini-icon2" src="Images/pointhand.png">
-                  <p class="responsive-text" data-mobile="Tap the card for more information" data-desktop="Click the card for more information" ></p>
+
+                <div class="mini-icon-flex-desk">
+                  <img class="mini-icon" src="Images/Mini Icon.png"><p>Click the card for more information</p>
                 </div>
+
+                <div class="mini-icon-flex-small">
+                  <img class="mini-icon" src="Images/pointhand.png"> <p>Tap the card for more information</p>
+                </div>
+
             </div>
           </a> 
         </div>     
@@ -118,19 +128,20 @@
        <!------------------------Fourth Card------------------------->
         <div class="Card-Grid-4">
           <!------------------------Link and content , this is what makes it clickable ------------------------->
-           <a href="yellowking.html" class="m-links"> 
+           <a href="Worlds/YellowWorld/yellowking.html" class="m-links"> 
             <div class="mini-wrapper">
-                <img src="Images/Carcosa.png" loading="lazy" class="logos" alt="Carcosa-logo">
+                <img src="Images/Carcosa.png" loading="lazy" class="logos" alt="Coin for Carcosa world">
                 <h2>CARCOSA ARCHIVES</h2>
                 <p> A decaying realm beneath twin suns — where time fractures, truths unravel, and the Yellow King reigns in madness. Perhaps this is where 
                 it all began.</p>
               <!------------------------Last line that says click or tap here ------------------------->    
-                <div class="mini-icon-flex">
-                  <img class="mini-icon" src="Images/Mini Icon.png">
-                  <img class="mini-icon2" src="Images/pointhand.png">
-                  <p class="responsive-text" data-mobile="Tap the card for more information" data-desktop="Click the card for more information" > 
-                  </p>
+                <div class="mini-icon-flex-desk">
+                  <img class="mini-icon" src="Images/Mini Icon.png"><p>Click the card for more information</p>
                 </div>
+
+                <div class="mini-icon-flex-small">
+                  <img class="mini-icon" src="Images/pointhand.png"> <p>Tap the card for more information</p>
+                </div> 
               
               </div>
             </a> 
@@ -139,18 +150,20 @@
       <!------------------------Fifth Card------------------------->
       <div class="Card-Grid-5">
         <!------------------------Link and content , this is what makes it clickable ------------------------->
-        <a href="deadspace.html" class="m-links">
+        <a href="Worlds/Deadspace/deadspace.html" class="m-links">
           
           <div class="mini-wrapper">
-                <img src="Images/dead-space.png" loading="lazy" class="logos" alt="dead-space-logo">
+                <img src="Images/dead-space.png" loading="lazy" class="logos" alt=" Coin for Dead Space world">
                 <h2>SPRAWL ARCHIVES</h2>
                 <p>Drift through the cold silence of space, where grotesque mutations and forgotten science awaken unspeakable horrors aboard derelict stations.</p>
                  <!------------------------Last line that says click or tap here ------------------------->  
-              <div class="mini-icon-flex">
-                <img class="mini-icon" src="Images/Mini Icon.png">
-                <img class="mini-icon2" src="Images/pointhand.png">
-                <p class="responsive-text" data-mobile="Tap the card for more information" data-desktop="Click the card for more information" ></p>
-              </div>
+                <div class="mini-icon-flex-desk">
+                  <img class="mini-icon" src="Images/Mini Icon.png"><p>Click the card for more information</p>
+                </div>
+
+                <div class="mini-icon-flex-small">
+                  <img class="mini-icon" src="Images/pointhand.png"> <p>Tap the card for more information</p>
+                </div> 
           </div>
 
         </a>  
@@ -161,7 +174,7 @@
 
         <div class="Card-Grid-6">
           <!------------------------Link and content , this is what makes it clickable -------------------------> 
-          <a href="fearandhunger.html" class="m-links">
+          <a href="Worlds/Fearandhunger/fearandhunger.html" class="m-links">
 
             <div class="mini-wrapper">
 
@@ -171,11 +184,13 @@
                 They do not breathe. They do not die.
                 Their hunger is older than gods.</p>
               <!------------------------Last line that says click or tap here ------------------------->  
-                <div class="mini-icon-flex">
-                  <img class="mini-icon" src="Images/Mini Icon.png">
-                  <img class="mini-icon2" src="Images/pointhand.png">
-                  <p class="responsive-text" data-mobile="Tap the card for more information" data-desktop="Click the card for more information" ></p>
+                <div class="mini-icon-flex-desk">
+                  <img class="mini-icon" src="Images/Mini Icon.png"><p>Click the card for more information</p>
                 </div>
+
+                <div class="mini-icon-flex-small">
+                  <img class="mini-icon" src="Images/pointhand.png"> <p>Tap the card for more information</p>
+                </div> 
 
             </div>
           </a> 

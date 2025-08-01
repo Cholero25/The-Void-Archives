@@ -1,0 +1,1105 @@
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #050906;
+  color: whitesmoke;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+/*--------------Header-------------------*/
+header{
+  background-color: #050906;
+  padding: 2rem;
+   font-family: 'Cinzel', serif;
+   z-index: 5;
+}
+/*--------------Changes logo size-------------------*/
+.Img-logo{
+  width: 4.5rem;
+}
+/*--------------Changes Title size-------------------*/
+.H-LINKS{
+  text-decoration: underline;
+  font-family: 'Cinzel', serif;
+   color: #ccc;
+  font-size: 1.3rem;
+}
+/*--------------Changes Links on right side of header-------------------*/
+.H-TITLE{
+text-decoration: none;
+font-family: 'Cinzel', serif;
+color:#c7b689;
+  font-size: 2rem;
+  text-shadow: 0 0 20px #2ec50c
+}
+/*--------------Container that contains all content this is nav container inside the header-------------------*/
+.H-FLEX{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*--------------Changes The container on left side of Header-------------------*/
+.H-L-FLEX{
+  display: flex;
+  align-items: center;
+}
+/*--------------Container that changes properties for right side of header links -------------------*/
+.H-R-FLEX{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap:2rem;
+flex-wrap: wrap;}
+
+/*--------------Hover for right side links -------------------*/
+.H-LINKS:hover{
+  color:#39FF14;
+}
+
+/*--------------Hamburger hiden on desktop -------------------*/
+.hamburger{
+  display: none;
+}
+
+/*--------------Hero-------------------*/
+.hero {
+position: relative;
+background-size: cover; /* Cambiado de 40% a cover para mejor adaptación */
+background-position: center right; /* Mejor posicionamiento */
+display: flex;
+min-height: 80vh;
+max-width: 100%;
+justify-content: space-around; /* Cambiado de center a space-between */
+align-items: center;
+padding: 2rem 7%; /* Usar porcentaje para mejor responsividad */
+box-sizing: border-box;
+text-align: left; /* Alineación izquierda para mejor legibilidad */
+background-image: url('Images/Hero-back.webp');
+max-width: 100%;
+overflow: hidden;
+}
+/*--------------Hero Image Class and animation-------------------*/
+.Hero-Img{
+max-width: 40vw; /* Usar viewport width para mejor escalado */
+min-width: 380px; /* Mínimo para que no se haga muy pequeña */
+height: auto;
+margin-right: 5%;
+align-self: center;
+ filter: drop-shadow(0 0 20px rgba(132, 181, 144, 0.2));
+}
+
+  .Hero-Item {
+    position: relative;
+  height: 100%;
+  pointer-events: none; /* no bloquea clics */
+  z-index: 2;
+}
+ .Hero-Item::before{
+    content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 1rem;
+  max-width: 100vh;
+ }
+
+.fade-in {
+opacity: 0;
+animation: fadeIn 2s ease-in forwards;
+animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+to {
+  opacity: 1;
+}
+}
+
+/*--------------Class that controls the background Image-------------------*/
+.hero::before {
+content: '';
+position: absolute;
+inset: 0;
+z-index: 1;
+}
+/*--------------Class that controls the content in front of the background Hero------------------*/
+.hero-content {
+position: relative;
+z-index: 2;
+max-width: 540px; /* Limita el ancho del texto */
+margin-left: 5%; /* Espaciado consistente */
+}
+/*--------------Class that controls the big title on the hero-------------------*/
+.hero-title {
+font-size: clamp(2rem, 7vw, 3.8rem);
+font-weight: bold;
+margin-bottom: 1rem;
+
+}
+/*--------------Class that controls the text under the title-------------------*/
+.hero-subtitle {
+font-size: 1.5rem;
+line-height: 1.5;
+margin-bottom: 1rem;
+}
+/*--------------Class that controls the text under the subtitle-------------------*/
+.hero-description {
+font-size: 1.1rem;
+margin-bottom: 2rem;
+color: #d1c091;
+}
+/*--------------Class that controls the button on the hero-------------------*/
+.hero-button {
+display: inline-block;
+padding: 0.75rem 1.5rem;
+border: 0.1px solid #4e5f4a;
+background-color: #152018;
+color: #d1e7cf;
+text-decoration: none;
+font-weight: bold;
+letter-spacing: 1px;
+transition: background-color 0.3s ease;
+}
+/*--------------Class that controls hover of hero button-------------------*/
+.hero-button:hover {
+background-color: #1f3024;
+}
+
+/*--------------Main-------------------*/
+
+
+/*--------------Main Div where all cards are store-------------------*/
+.wrapper{
+margin:2.5rem;
+}
+
+/*--------------Title above the cards-------------------*/
+.Main-Title{
+  text-align: center;
+  font-family: 'Cinzel', serif;
+   color: #c4bfb2;
+   font-size: 2rem;
+}
+/*--------------Main grid controls all the cards-------------------*/
+.Main-Grid{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-auto-rows: minmax(300px, auto);
+text-align: center;
+gap:1.2rem; 
+grid-auto-rows: 1fr;
+padding: auto;
+max-width: 100%;}
+
+
+/*--------------Div that controls content inside the card-------------------*/
+.mini-wrapper{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 100%;
+padding: 1.5rem;
+align-items: center;
+justify-content: space-between; 
+max-width: 100%;
+flex: 1 1 250px;
+}
+/*--------------Size of logos inside the cards-------------------*/
+
+.logos{
+  width: 10rem;
+
+}
+/*--------------created to center more the text-------------------*/
+.mini-wrapper p {
+flex-grow: 1;
+}
+
+/*--------------Selector to control size and background of the card-------------------*/
+.Card-Grid-1,
+.Card-Grid-2,
+.Card-Grid-3,
+.Card-Grid-4,
+.Card-Grid-5,
+.Card-Grid-6,{
+  width: 100%;
+  flex: 1 1 auto ;
+  line-height:1.3;
+  aspect-ratio: 1/1; 
+  background-size: cover;
+}
+/*--------------Hover of every card-------------------*/
+.Card-Grid-1:hover,
+.Card-Grid-2:hover,
+.Card-Grid-3:hover,
+.Card-Grid-4:hover,
+.Card-Grid-5:hover,
+.Card-Grid-6:hover,
+.Card-Grid-7:hover{
+
+color: #c4bfb2;
+border: solid 2px #39FF14;
+cursor: pointer;
+transform: scale(1.05);
+transition: transform 0.3s ease;
+box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
+
+}
+/*--------------class to eliminate links boder and change color-----------------*/
+.m-links{
+text-decoration: none;
+color: whitesmoke;
+}
+
+
+
+/*--------------Div for backgrouns of cards------------------*/
+.Card-Grid-1{
+
+  background-image: url("../Images/Lovecraft-World.webp");
+  background-position: 60% 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.Card-Grid-2{
+
+  background-image: url("../Images/Yarhnam.webp");
+  background-position: 60% 20%;
+     background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.Card-Grid-3{
+  background-image: url("../Images/WARHAMMER.webp");
+  background-position: 60% 20%;
+     background-repeat: no-repeat;
+  background-size: cover;
+}
+.Card-Grid-4{
+   background-image: url("../Images/yellowland.webp");
+  background-position: 70% 30%;
+     background-repeat: no-repeat;
+  background-size: cover;
+}
+.Card-Grid-5{
+   background-image: url("../Images/dead-space2.webp");
+  background-position: 70% 30%;
+     background-repeat: no-repeat;
+  background-size: cover;
+}
+.Card-Grid-6{
+   background-image: url("../Images/fearandhung.png");
+  background-position: 70% 30%;
+     background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*--------------Div for the icon next to the click here text , this is for the desktop------------------*/
+
+.mini-icon{
+width: 2rem;
+}
+
+/*--------------Div for the icon next to the click here text , this is for the phone------------------*/
+.mini-icon2{
+width: 3rem;
+display: none;
+}
+
+
+.mini-icon-flex-desk{
+  display: flex;
+  flex-wrap: wrap;
+flex-shrink: 0;
+font-size:0.7rem;    /* más pequeño en móvil */
+flex: 1; 
+margin-top: auto;
+color: #d1c091;
+max-width: 250px;
+align-content: center;
+}
+.mini-icon-flex-small{
+  display: none;
+}
+
+/*--------------P with atribute click here and tap here ------------------*/
+.responsive-text::after{
+content: attr(data-desktop);
+}
+
+/*--------------flex that controls text and icon ------------------*/
+.mini-icon-flex{
+display: flex;
+flex-wrap: wrap;
+flex-shrink: 0;
+font-size:0.7rem;    /* más pequeño en móvil */
+flex: 1; 
+margin-top: auto;
+color: #d1c091;
+max-width: 250px;
+align-content: center;
+}
+
+
+
+/*--------------flex that controls text and icon for the click button on the creatus page ------------------*/
+.mini-icon-flex2{
+display: flex;
+flex-wrap: wrap;
+flex-shrink: 0;
+max-width: 100%;
+font-size:0.8rem;
+color: #d1c091;
+justify-content: end;
+align-content: center;
+margin-top: auto;
+}
+
+
+
+
+/*--------------Footer-------------------*/
+
+.footer {
+background-color: #0b0c10;
+color: #c4bfb2;
+padding: 40px 20px 20px;
+font-family: 'Cinzel', serif;
+}
+
+/*-------------Contains 3 footer items-------------------*/
+.footer-container {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 40px;
+max-width: 1200px;
+margin: auto;
+}
+
+/*-------------Syle all 3 colums on the footer-------------------*/
+.footer-column {
+flex: 1 1 250px;
+}
+/*-------------Footer titles-------------------*/
+.footer-column h3 {
+font-size: 1.3rem;
+margin-bottom: 0.7rem;
+color: #c4bfb2;
+}
+
+
+
+/*-------------Footer text and list items -------------------*/
+.footer-column p,
+.footer-column li {
+font-size: 0.9rem;
+line-height: 1.6;
+}
+
+/*-------------eliminates circle on the ul -------------------*/
+.footer-column ul {
+list-style: none;
+padding: 0;
+}
+
+/*-------------Footer style links -------------------*/
+
+.footer-column a {
+color: #c4bfb2;
+text-decoration: none;
+}
+/*-------------Footer links hover-------------------*/
+.footer-column a:hover {
+text-decoration: underline;
+color: #39FF14;
+}
+/*-------------Footer Copyright line-------------------*/
+.footer-bottom {
+text-align: center;
+border-top: 1px solid #333;
+margin-top: 30px;
+padding-top: 20px;
+font-size: 0.9rem;
+color: #777;
+}
+
+         /*-------------Creature Cards styles-------------------*/
+
+/*-------------selector that controls four power leves-------------------*/
+
+
+.Powers{
+display: flex;
+justify-content: center;
+gap: 25px;
+font-family: 'Cinzel', serif;
+font-weight: bold;
+flex-wrap: wrap;
+font-size: 1rem;
+}
+/*-------------selector that controls content inside each power level-------------------*/
+.flex-colors{
+display: flex;
+gap:15px;
+}
+/*-------------Selector to style the box colors next to the power category-------------------*/
+.L1,.L2,.L3,.L4{ /*--This one styles the border-*/
+width: 60px;
+border: solid #c7b689;
+border-radius: 15px;
+}
+
+/*--This selectors adds the color to each box-*/
+.L1{
+background-color: #0a1f33;
+}
+.L2{
+background-color: #0a2e1a;
+}
+.L3{
+background-color: #3a2f0c;
+}
+.L4{
+background-color: #8B1E3F;
+}
+
+
+/*-------------Class controls the main content of every creature page-------------------*/
+.Main-cards{
+padding: 35px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+/*-------------Contains everything on the creature card-------------------*/
+.card {
+display: flex;
+flex-direction: row;
+border: 1px solid #c7b689;
+border-radius: 8px;
+overflow:hidden;
+background-color: #000c20;
+margin: 1rem 0;
+justify-content: center;
+max-width: 65rem;
+max-height:250px;
+  box-sizing: border-box;      /* Incluye padding en el ancho total */
+    overflow: hidden;            /* Evita desbordamiento */
+    word-wrap: break-word;   
+}
+/*-------------Hover for creatures card-------------------*/
+.card:hover{
+  border: solid 2px #39FF14;
+cursor: pointer;
+transform: scale(1.03);
+transition: transform 0.3s ease;
+box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
+}
+/*-------------Style to remove blue line on the a selector-------------------*/
+.card-links{
+text-decoration: none;
+max-width: 100%;
+}
+
+/*------------Container Where creature images are -------------------*/
+.card-img {
+ /* Evita que se colapse */
+max-width: 210px;
+height: auto; /* <-- controla aquí el tamaño máximo de la imagen */
+width: 100%;
+overflow: hidden;
+border-right: 1px solid #c7b689;
+}
+
+/*------------The Image inside the container-------------------*/
+.card-img img {
+width: 100%;
+height: 100%;
+display: block;
+}
+/*------------Every conteiner text content -------------------*/
+.card-text{
+flex: 1 ;
+padding: 1rem;
+display: flex;
+flex-direction: column;
+color: white; /* esto empuja el "Click..." hacia abajo */
+max-height: 100%;
+max-width: 100%;
+font-weight: bold;
+}
+/*------------Main Title for the container-------------------*/
+#Creature{
+color:#c7b689;
+margin-top: 0px;
+margin-bottom: 0px;}
+
+
+/*------------Selector for each creature power level-------------------*/
+.Lesser{
+background-color: #0a1f33;
+}
+.Eldritch{
+ background-color: #0a2e1a ;
+}
+.Voidborn{
+background-color:#3a2f0c ; 
+}
+.Outer{
+background-color: #8B1E3F;
+}
+
+/*----------This is where the glosary of each beast starts -----------------*/
+
+
+/*------------Font for cards and diferent selectors------------------*/
+p{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+h2,h1,.title-glosary{
+color:#c7b689;
+}
+.title-glosary{
+text-align: center;
+font-size: 26px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+/*  Page were nothing exist  */
+
+
+/*------------selector for the content inside the main content------------------*/
+.Nothing-M{
+text-align: center;
+padding: 35px;
+font-size: 1.3rem;
+color: rgb(128, 126, 126);
+}
+/*------------selector to adjust title of the page------------------*/
+.nothing-T{
+font-size: 50px;
+}
+
+/*------------selector to adjust important links------------------*/
+.nothing-L{
+text-decoration: none;
+color: rgb(162, 211, 227);
+}
+/*------------selector to adjust the image------------------*/
+.nothing-img{
+width: 120px;
+border-radius: 50%;
+}
+
+
+
+/*------------BEstiary information HTML----------------*/
+
+.dagon,.dagon1{text-align: center;
+      font-size: 1.5rem;}
+      .dagon1{
+          font-size: 3rem;
+      }
+      .dagon{
+        color: #ccc;
+      }
+      /* for weaker class*/
+      .main-blue{
+       display: grid;
+       grid-template-columns: 300px 1fr ;
+       gap:2rem;
+       justify-content: center; 
+       max-width: 1100px;
+       padding: 3rem;
+       margin: auto;
+      background-color: #0a1f33;
+       border: 3px solid #142b41 ;
+    box-shadow: 0 0 20px black;
+    font-size: 1.1rem;
+  color: #ccc;}
+     
+
+      .img-glosary-blue{
+          max-width: 100%;  
+          border: 3px solid #142b41 ;
+    box-shadow: 0 0 10px black;
+      }
+      .img-glosary2{
+          max-width: 100%;
+          max-height: 23rem;
+          display: flex;
+          justify-self: center;
+          align-self: center;
+      }
+      .text-bottom-blue{
+          padding-bottom: 0.2rem;
+          border-bottom: 3px solid #1f3448;
+      }
+      .container-card{
+          padding: 30px 10px;
+      }
+      .glosary-ul li{
+          margin: 1rem;
+      }
+      .References-blue{
+          border: 3px solid #142b41 ;
+          padding-left: 10px;
+      }
+      .Insignia-blue{
+        border: 3px solid #142b41 ;
+          padding-left: 10px;
+          flex-direction: column;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+      }
+      .left-items{
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+      }
+      .right-dagon > div,section{
+          margin-bottom: 1.1rem;
+      }
+      .bubble-blue-text{
+          border-left: 10px solid #253748;
+          background-color: #122b42;
+          padding: 1rem;
+      }
+      .clasification-ul li{
+          margin:0.6rem;
+          list-style:square;
+      }
+      .dagon{
+          font-size: 1.5rem;
+      }
+      .glosary-links{
+          text-decoration: underline;
+          color: aliceblue;
+      }
+      .glosary-links:hover{
+          color:#39FF14;
+      }
+
+
+      /* for more powerful class*/
+      .main-green{
+       display: grid;
+       grid-template-columns: 300px 1fr ;
+       gap:2rem;
+       justify-content: center; 
+       max-width: 1100px;
+       padding: 3rem;
+       margin: auto;
+      background-color: #0a2e1a ;
+       border: 3px solid #103420  ;
+    box-shadow: 0 0 20px #0a2e1a ;
+    font-size: 1.1rem;
+  color: #ccc;
+      }
+      .bubble-green-text{
+          border-left: 10px solid #1b402b;
+          background-color: #103420;
+          padding: 1rem;
+      }
+      .References-green{
+          border: 3px solid #1b402b;
+          padding-left: 10px;
+      }
+      .Insignia-green{
+        border: 3px solid #1b402b;
+          padding-left: 10px;
+      }
+      .text-bottom-green{
+        padding-bottom: 0.2rem;
+        border-bottom: 3px solid #1b402b;
+      }
+      .img-glosary-green{
+          max-width: 100%;  
+          border:3px solid #103420;
+    box-shadow: 0 0 10px black;
+      }
+      /* for more more powerful class*/
+       .main-brown{
+       display: grid;
+       grid-template-columns: 300px 1fr ;
+       gap:2rem;
+       justify-content: center; 
+       max-width: 1100px;
+       padding: 3rem;
+       margin: auto;
+      background-color: #3a2f0c  ;
+       border: 3px solid #453c1e   ;
+    box-shadow: 0 0 20px #3d320e  ;
+    font-size: 1.1rem;
+  color: #ccc;
+      }
+      .bubble-brown-text{
+          border-left: 10px solid #453c1e ;
+          background-color:#3f3512; 
+          padding: 1rem;
+      }
+      .References-brown{
+          border: 3px solid #453c1e;
+          padding-left: 10px;
+      }
+      .Insignia-brown{
+        border: 3px solid #453c1e;
+          padding-left: 10px;
+      }
+      .text-bottom-brown{
+        padding-bottom: 0.2rem;
+        border-bottom: 3px solid #453c1e;
+      }
+      .img-glosary-brown{
+          max-width: 100%;  
+          border:3px solid #453c1e;
+    box-shadow: 0 0 10px black;
+      }
+/*Most powerful class*/
+
+/* for more more powerful class*/
+       .main-red{
+       display: grid;
+       grid-template-columns: 300px 1fr ;
+       gap:2rem;
+       justify-content: center; 
+       max-width: 1100px;
+       padding: 3rem;
+       margin: auto;
+      background-color: #8B1E3F; ;
+       border: 3px solid #a84864;   ;
+    box-shadow: 0 0 20px #8B1E3F; ;
+    font-size: 1.1rem;
+  color: #ccc;
+      }
+      .bubble-red-text{
+          border-left: 10px solid#a84864;;
+          background-color:#8d2947;; 
+          padding: 1rem;
+      }
+      .References-red{
+          border: 3px solid #a84864; 
+          padding-left: 10px;
+      }
+      .Insignia-red{
+        border: 3px solid #a84864; 
+          padding-left: 10px;
+      }
+      .text-bottom-red{
+        padding-bottom: 0.2rem;
+        border-bottom: 3px solid #a84864; 
+      }
+      .img-glosary-red{
+          max-width: 100%;  
+          border:3px solid #a84864; 
+    box-shadow: 0 0 10px black;
+      }
+
+
+
+/* Responsive */
+
+/*  Created to specify a specific width on bigger screens  */
+
+@media (mim-width: 2000px) {
+.wrapper {
+  max-width: 1800px;
+  margin: 2.5rem auto;
+}
+
+}
+
+
+/*  Break point created to adjust creature card and a medium size screen cause it was hidding click here line  */
+@media (max-width: 1000px) {
+
+.card{
+max-height: 300px;
+}
+
+.Main-Grid{
+
+  grid-template-columns: repeat(2,1fr) ;
+}
+}
+
+/*  Created to become it more responsive  on phone*/
+@media (max-width: 768px) {
+
+
+
+/*  List items on header , this is to style the list inside the hamburger menu*/
+.H-R-FLEX {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
+   z-index: 6;
+   background-color: #09110b;
+   justify-content: center;
+}
+
+
+.H-R-FLEX {
+display: none;
+flex-direction: column;
+flex-wrap: wrap;
+position: absolute;
+top: 90px;
+right: 10px;
+background-color:#12141b;
+padding: 10px;
+border-radius: 5px;
+height: 100vh;
+width: 370px;
+position: fixed;
+}   
+
+
+
+/*  When hamburger is active items will use flex*/
+.H-R-FLEX.active {
+  display: flex;
+}
+/*  Holds the hamburger in place adjust the size of it*/
+.H-FLEX{
+  flex-wrap: nowrap;
+  font-size: 1.4rem;
+}
+
+/* Muestra la X when hamburger is open */
+#hamburger.active::before {
+content: "✕";
+color: black;
+position: absolute;
+top: 0;
+left: 0;
+}
+/* Makes hamburger appear*/
+.hamburger {
+  display: block;
+  cursor: pointer;}
+
+/*  Adjust size for header hero*/
+.H-TITLE{
+  font-size: 1.5rem;
+  
+}
+/*  Changes the cursor type*/
+.H-R-FLEX li{
+cursor: pointer;
+}
+
+
+
+
+/*  Adjusting main hero on phone and animation*/
+.hero{
+
+  background-image: url('Images/Tentacle.webp');
+   filter: drop-shadow(0 0 20px rgba(132, 181, 144, 0.2));
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  opacity: 0;
+  min-height: 75vh;
+  animation: fadeIn 2s ease-in forwards;
+  animation-delay: 0.5s;
+  gap:0px;
+
+}
+/*  Adjust display for desktop hero image*/
+.Hero-Img{
+  display: none;
+  
+}
+
+/*  Adjust grid size on landing page card*/
+.Main-Grid{
+
+  grid-template-columns: 1fr ;
+}
+
+/*  Adjust grid size of content on card*/
+.mini-wrapper{
+  width: 100%;
+}
+
+/*---------------------  Creatures Card page------------- */
+
+/*  Adjust the grid on the power level divs*/
+.Powers{
+flex-direction: column;
+justify-content: center;
+padding: 35px;
+}
+
+
+
+.card {
+max-height: none;
+text-align: center;
+max-width: 100%;
+}
+
+/*  Adjust tap here line*/
+.responsive-text::after {
+  content: attr(data-mobile);
+}
+
+/*  Adjust tap here image*/
+.mini-icon2{
+max-width: 40px;
+display: block;
+}
+/*  eliminates the desktop image*/
+
+/* adjust icon and line are located */
+.mini-icon-flex2{
+justify-content: center;
+padding: none;
+max-width: 100%;
+max-height: 100%;
+margin-top: 0;
+}
+
+
+.mini-icon-flex-desk{
+display: none;
+}
+.mini-icon-flex-small{
+  display: flex;
+  flex-wrap: wrap;
+flex-shrink: 0;
+font-size:0.7rem;    /* más pequeño en móvil */
+flex: 1; 
+margin-top: auto;
+color: #d1c091;
+max-width: 250px;
+align-content: center;}
+
+
+
+
+.card {
+display: flex;
+flex-direction: column;
+max-height: none;
+text-align: center;
+height: auto;
+box-sizing: border-box; 
+max-width: 100%;
+}
+.card-img {
+  width: 100%;
+max-width: 100%;
+height: 400px;
+border-right: none;
+border-bottom: 1px solid #c7b689;
+}
+.Main-cards{
+padding: 25px;
+}
+
+#Creature{
+text-align: center;
+} 
+
+/* adjust creatures bestiary hmtl*/
+ .main-green,.main-blue,.main-brown,.main-red{
+ display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "header"
+    "content"
+    "references"
+    "insignia";
+  padding: 1rem;
+}
+
+.dagon1 {
+  grid-area: header;
+}
+
+.right-dagon {
+  grid-area: content;
+}
+
+.References {
+  grid-area: references;
+   /* Adds space between content and references */
+  order: 3; /* Ensures it appears last */
+}
+.Insignia{
+  grid-area: insignia;
+  order: 4;
+}
+
+.left-items {
+  display: contents; /* Allows grid items to flow naturally in the grid */
+}
+
+
+}
+
+
+/*-------------Media Created for cards on landing with higher resolution-------------------*/
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+/* High-DPI specific styles */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.logos {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.Card-Grid-1 {
+  background-image: url("Images/Lovecraft-World@2x.webp");
+  /* Opcional: ajustar background-size si la relación de aspecto cambia */
+}
+.Card-Grid-2 {
+  background-image: url("Images/Yarhnam@2x.webp");
+  /* Opcional: ajustar background-size si la relación de aspecto cambia */
+}
+.Card-Grid-3 {
+  background-image: url("Images/WARHAMMER@2x.webp");
+  /* Opcional: ajustar background-size si la relación de aspecto cambia */
+}
+.Card-Grid-4 {
+  background-image: url("Images/yellowland@2x.webp");
+  /* Opcional: ajustar background-size si la relación de aspecto cambia */
+}
+  .Card-Grid-5 {
+  background-image: url("Images/dead-space2@2x.webp");
+  /* Opcional: ajustar background-size si la relación de aspecto cambia */
+}
+  .Card-Grid-6 {
+  background-image: url("Images/fearandhung.png");
+  /* Opcional: ajustar background-size si la relación de aspecto cambia */
+}
+
+}
