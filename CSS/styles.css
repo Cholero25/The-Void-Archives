@@ -310,14 +310,11 @@ color: whitesmoke;
 /*--------------Div for the icon next to the click here text , this is for the desktop------------------*/
 
 .mini-icon{
-width: 2rem;
+width: 2.5rem;
 }
 
 /*--------------Div for the icon next to the click here text , this is for the phone------------------*/
-.mini-icon2{
-width: 3rem;
-display: none;
-}
+
 
 
 .mini-icon-flex-desk{
@@ -335,39 +332,30 @@ align-content: center;
   display: none;
 }
 
+
+/*--------------flex that controls text and icon for the click button on the creatus page ------------------*/
+
+
+
+.mini-icon-flex-desk-creatures{
+  display: flex;
+font-size:0.7rem;    /* más pequeño en móvil */
+color: #d1c091;
+align-content: center;
+justify-content: flex-end;
+margin-top: auto;
+}
+
+.mini-icon-flex-small-creatures{
+  display:none
+}
+
 /*--------------P with atribute click here and tap here ------------------*/
 .responsive-text::after{
 content: attr(data-desktop);
 }
 
 /*--------------flex that controls text and icon ------------------*/
-.mini-icon-flex{
-display: flex;
-flex-wrap: wrap;
-flex-shrink: 0;
-font-size:0.7rem;    /* más pequeño en móvil */
-flex: 1; 
-margin-top: auto;
-color: #d1c091;
-max-width: 250px;
-align-content: center;
-}
-
-
-
-/*--------------flex that controls text and icon for the click button on the creatus page ------------------*/
-.mini-icon-flex2{
-display: flex;
-flex-wrap: wrap;
-flex-shrink: 0;
-max-width: 100%;
-font-size:0.8rem;
-color: #d1c091;
-justify-content: end;
-align-content: center;
-margin-top: auto;
-}
-
 
 
 
@@ -497,10 +485,10 @@ background-color: #000c20;
 margin: 1rem 0;
 justify-content: center;
 max-width: 65rem;
-max-height:250px;
-  box-sizing: border-box;      /* Incluye padding en el ancho total */
-    overflow: hidden;            /* Evita desbordamiento */
-    word-wrap: break-word;   
+max-height:230px;
+box-sizing: border-box;      /* Incluye padding en el ancho total */
+overflow: hidden;            /* Evita desbordamiento */
+word-wrap: break-word;   
 }
 /*-------------Hover for creatures card-------------------*/
 .card:hover{
@@ -831,7 +819,7 @@ border-radius: 50%;
 @media (max-width: 1000px) {
 
 .card{
-max-height: 300px;
+max-height: 270px;
 }
 
 .Main-Grid{
@@ -969,21 +957,6 @@ max-width: 100%;
   content: attr(data-mobile);
 }
 
-/*  Adjust tap here image*/
-.mini-icon2{
-max-width: 40px;
-display: block;
-}
-/*  eliminates the desktop image*/
-
-/* adjust icon and line are located */
-.mini-icon-flex2{
-justify-content: center;
-padding: none;
-max-width: 100%;
-max-height: 100%;
-margin-top: 0;
-}
 
 
 .mini-icon-flex-desk{
@@ -999,6 +972,18 @@ margin-top: auto;
 color: #d1c091;
 max-width: 250px;
 align-content: center;}
+
+.mini-icon-flex-desk-creatures{
+display: none;
+}
+
+.mini-icon-flex-small-creatures{
+  display:flex;
+  font-size:0.9rem;
+  color: #d1c091;
+  align-content: center;
+  justify-content: center;
+}
 
 
 
