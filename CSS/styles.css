@@ -917,7 +917,7 @@ cursor: pointer;
 /*  Adjusting main hero on phone and animation*/
 .hero{
 
-  background-image: url('Images/Tentacle.webp');
+  background-image: url('../Images/Tentacle.webp');
    filter: drop-shadow(0 0 20px rgba(132, 181, 144, 0.2));
   background-position: right;
   background-repeat: no-repeat;
@@ -1078,27 +1078,27 @@ body {
 }
 
 .Card-Grid-1 {
-  background-image: url("Images/Lovecraft-World@2x.webp");
+  background-image: url("../Images/Lovecraft-World@2x.webp");
   /* Opcional: ajustar background-size si la relación de aspecto cambia */
 }
 .Card-Grid-2 {
-  background-image: url("Images/Yarhnam@2x.webp");
+  background-image: url("../Images/Bloodborne\ World.png");
   /* Opcional: ajustar background-size si la relación de aspecto cambia */
 }
 .Card-Grid-3 {
-  background-image: url("Images/WARHAMMER@2x.webp");
+  background-image: url("../Images/WARHAMMER@2x.webp");
   /* Opcional: ajustar background-size si la relación de aspecto cambia */
 }
 .Card-Grid-4 {
-  background-image: url("Images/yellowland@2x.webp");
+  background-image: url("../Images/yellowland@2x.webp");
   /* Opcional: ajustar background-size si la relación de aspecto cambia */
 }
   .Card-Grid-5 {
-  background-image: url("Images/dead-space2@2x.webp");
+  background-image: url("../Images/dead-space2@2x.webp");
   /* Opcional: ajustar background-size si la relación de aspecto cambia */
 }
   .Card-Grid-6 {
-  background-image: url("Images/fearandhung.png");
+  background-image: url("../Images/fearandhung.png");
   /* Opcional: ajustar background-size si la relación de aspecto cambia */
 }
 
