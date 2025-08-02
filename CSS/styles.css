@@ -56,6 +56,9 @@ color:#c7b689;
   align-items: center;
   gap:2rem;
 flex-wrap: wrap;}
+.mini-icon3{
+  width: 1rem;
+}
 
 /*--------------Hover for right side links -------------------*/
 .H-LINKS:hover{
