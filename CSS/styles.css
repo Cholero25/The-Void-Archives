@@ -310,7 +310,8 @@ color: whitesmoke;
 /*--------------Div for the icon next to the click here text , this is for the desktop------------------*/
 
 .mini-icon{
-width: 2.5rem;
+width: 2.1rem;
+height: 2.1rem;
 }
 
 /*--------------Div for the icon next to the click here text , this is for the phone------------------*/
@@ -433,36 +434,67 @@ color: #777;
 .Powers{
 display: flex;
 justify-content: center;
-gap: 25px;
+gap: 15px;
 font-family: 'Cinzel', serif;
 font-weight: bold;
 flex-wrap: wrap;
 font-size: 1rem;
+padding:1rem;}
+
+.Power-icon{
+  width: 2rem;
+  margin:auto;
+  max-width: 100%;
 }
+.Power-icons{
+   width: 2.5rem;
+   height: 2.6rem;
+   margin: auto;
+}
+
 /*-------------selector that controls content inside each power level-------------------*/
 .flex-colors{
 display: flex;
+align-items: center;
+justify-content: center;
 gap:15px;
 }
 /*-------------Selector to style the box colors next to the power category-------------------*/
 .L1,.L2,.L3,.L4{ /*--This one styles the border-*/
-width: 60px;
-border: solid #c7b689;
-border-radius: 15px;
+padding: 0 0.8rem;
+border: solid 0.1rem #c7b689;
+border-radius: 0.2rem;
+display: flex;
 }
 
 /*--This selectors adds the color to each box-*/
 .L1{
 background-color: #0a1f33;
+display: flex;
+align-content: center;
+justify-content: center;
+gap: 0.5rem;
 }
 .L2{
 background-color: #0a2e1a;
+display: flex;
+align-content: center;
+justify-content: center;
+gap: 0.5rem;
 }
 .L3{
 background-color: #3a2f0c;
+display: flex;
+align-content: center;
+justify-content: center;
+gap: 0.5rem;
 }
 .L4{
 background-color: #8B1E3F;
+display: flex;
+align-content: center;
+justify-content: center;
+gap: 0.5rem;
 }
 
 
@@ -484,8 +516,10 @@ overflow:hidden;
 background-color: #000c20;
 margin: 1rem 0;
 justify-content: center;
-max-width: 65rem;
+width: 65rem;
+max-width: 100%;
 max-height:230px;
+font-size: 0.9rem;
 box-sizing: border-box;      /* Incluye padding en el ancho total */
 overflow: hidden;            /* Evita desbordamiento */
 word-wrap: break-word;   
@@ -513,7 +547,16 @@ width: 100%;
 overflow: hidden;
 border-right: 1px solid #c7b689;
 }
+.card-title-icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
 
+.mini{
+  width: 2rem;
+}
 /*------------The Image inside the container-------------------*/
 .card-img img {
 width: 100%;
@@ -819,7 +862,14 @@ border-radius: 50%;
 @media (max-width: 1000px) {
 
 .card{
-max-height: 270px;
+max-height: 240px;
+font-size: 0.8rem;
+}
+
+.Powers{display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .Main-Grid{
@@ -950,6 +1000,7 @@ padding: 35px;
 max-height: none;
 text-align: center;
 max-width: 100%;
+font-size: 0.9rem;
 }
 
 /*  Adjust tap here line*/
@@ -966,7 +1017,7 @@ display: none;
   display: flex;
   flex-wrap: wrap;
 flex-shrink: 0;
-font-size:0.7rem;    /* más pequeño en móvil */
+font-size:0.9rem;    /* más pequeño en móvil */
 flex: 1; 
 margin-top: auto;
 color: #d1c091;
@@ -1046,6 +1097,14 @@ text-align: center;
   display: contents; /* Allows grid items to flow naturally in the grid */
 }
 
+
+.card-title-icon{
+  flex-direction: column;
+  gap:0.3rem;
+}
+.mini-icon{
+  height: 2.3rem;
+}
 
 }
 
