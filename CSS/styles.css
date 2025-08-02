@@ -57,7 +57,16 @@ color:#c7b689;
   gap:2rem;
 flex-wrap: wrap;}
 .mini-icon3{
-  width: 1rem;
+  width: 3rem;
+}
+.mini-icon4{
+  width: 1.3rem;
+}
+.H-OPTIONS{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
 }
 
 /*--------------Hover for right side links -------------------*/
@@ -472,28 +481,28 @@ display: flex;
 
 /*--This selectors adds the color to each box-*/
 .L1{
-background-color: #0a1f33;
+background-color: #0b1a2a;
 display: flex;
 align-content: center;
 justify-content: center;
 gap: 0.5rem;
 }
 .L2{
-background-color: #0a2e1a;
+background-color: #11261b;
 display: flex;
 align-content: center;
 justify-content: center;
 gap: 0.5rem;
 }
 .L3{
-background-color: #3a2f0c;
+background-color: #2a2415;
 display: flex;
 align-content: center;
 justify-content: center;
 gap: 0.5rem;
 }
 .L4{
-background-color: #8B1E3F;
+background-color: #2d0c15;
 display: flex;
 align-content: center;
 justify-content: center;
@@ -586,16 +595,16 @@ margin-bottom: 0px;}
 
 /*------------Selector for each creature power level-------------------*/
 .Lesser{
-background-color: #0a1f33;
+background-color: #0b1a2a;
 }
 .Eldritch{
- background-color: #0a2e1a ;
+ background-color: #11261b ;
 }
 .Voidborn{
-background-color:#3a2f0c ; 
+background-color:#2a2415 ; 
 }
 .Outer{
-background-color: #8B1E3F;
+background-color: #2d0c15;
 }
 
 /*----------This is where the glosary of each beast starts -----------------*/
@@ -610,6 +619,7 @@ color:#c7b689;
 text-align: center;
 font-size: 26px;
 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-decoration: underline;
 }
 
 
@@ -662,7 +672,7 @@ border-radius: 50%;
        max-width: 1100px;
        padding: 3rem;
        margin: auto;
-      background-color: #0a1f33;
+      background-color: #0b1a2a;
        border: 3px solid #142b41 ;
     box-shadow: 0 0 20px black;
     font-size: 1.1rem;
@@ -741,7 +751,7 @@ border-radius: 50%;
        max-width: 1100px;
        padding: 3rem;
        margin: auto;
-      background-color: #0a2e1a ;
+      background-color: #11261b;
        border: 3px solid #103420  ;
     box-shadow: 0 0 20px #0a2e1a ;
     font-size: 1.1rem;
@@ -778,7 +788,7 @@ border-radius: 50%;
        max-width: 1100px;
        padding: 3rem;
        margin: auto;
-      background-color: #3a2f0c  ;
+      background-color: #2a2415  ;
        border: 3px solid #453c1e   ;
     box-shadow: 0 0 20px #3d320e  ;
     font-size: 1.1rem;
@@ -817,32 +827,32 @@ border-radius: 50%;
        max-width: 1100px;
        padding: 3rem;
        margin: auto;
-      background-color: #8B1E3F; ;
-       border: 3px solid #a84864;   ;
+      background-color: #2d0c15 ;
+       border: 3px solid #5e1328;   ;
     box-shadow: 0 0 20px #8B1E3F; ;
     font-size: 1.1rem;
   color: #ccc;
       }
       .bubble-red-text{
-          border-left: 10px solid#a84864;;
-          background-color:#8d2947;; 
+          border-left: 10px solid#5c1a2d;;
+          background-color:#42111f;
           padding: 1rem;
       }
       .References-red{
-          border: 3px solid #a84864; 
+          border: 3px solid #42111f; 
           padding-left: 10px;
       }
       .Insignia-red{
-        border: 3px solid #a84864; 
+        border: 3px solid #42111f; 
           padding-left: 10px;
       }
       .text-bottom-red{
         padding-bottom: 0.2rem;
-        border-bottom: 3px solid #a84864; 
+        border-bottom: 3px solid #42111f; 
       }
       .img-glosary-red{
           max-width: 100%;  
-          border:3px solid #a84864; 
+          border:3px solid #42111f; 
     box-shadow: 0 0 10px black;
       }
 
@@ -878,6 +888,11 @@ font-size: 0.8rem;
 .Main-Grid{
 
   grid-template-columns: repeat(2,1fr) ;
+}
+
+
+.mini-icon3{
+  width: 2rem;
 }
 }
 
@@ -1107,6 +1122,10 @@ text-align: center;
 }
 .mini-icon{
   height: 2.3rem;
+}
+
+.mini-icon3{
+  width: 2rem;
 }
 
 }
