@@ -10,3 +10,19 @@ hamburger.addEventListener('click', () => {
     hamburger.textContent = '☰';
   }
 });
+
+
+
+function colorsector(value){
+  
+const colors = document.querySelectorAll('.card-links');
+
+colors.forEach(val => {
+  if (value === '' || val.classList.contains(value)){
+    val.style.display = 'block'
+  } else {
+    val.style.display = 'none'
+  }
+});
+
+}

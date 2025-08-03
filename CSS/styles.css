@@ -332,7 +332,7 @@ height: 2.1rem;
 
 .mini-icon-flex-desk{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 flex-shrink: 0;
 font-size:0.7rem;    /* más pequeño en móvil */
 flex: 1; 
@@ -453,6 +453,10 @@ flex-wrap: wrap;
 font-size: 1rem;
 padding:1rem;}
 
+ a:hover{
+  cursor: pointer;
+}
+
 .Power-icon{
   width: 2rem;
   margin:auto;
@@ -472,11 +476,18 @@ justify-content: center;
 gap:15px;
 }
 /*-------------Selector to style the box colors next to the power category-------------------*/
-.L1,.L2,.L3,.L4{ /*--This one styles the border-*/
+.L1,.L2,.L3,.L4,.L5{ /*--This one styles the border-*/
 padding: 0 0.8rem;
 border: solid 0.1rem #c7b689;
 border-radius: 0.2rem;
 display: flex;
+}
+
+.L1:hover,.L2:hover,.L3:hover,.L4:hover,.L5:hover{
+  border: 0.2rem solid #39FF14;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
 }
 
 /*--This selectors adds the color to each box-*/
@@ -503,6 +514,13 @@ gap: 0.5rem;
 }
 .L4{
 background-color: #2d0c15;
+display: flex;
+align-content: center;
+justify-content: center;
+gap: 0.5rem;
+}
+.L5{
+  background-color: #2a032c;
 display: flex;
 align-content: center;
 justify-content: center;
@@ -1033,7 +1051,7 @@ display: none;
 }
 .mini-icon-flex-small{
   display: flex;
-  flex-wrap: wrap;
+flex-wrap: nowrap;
 flex-shrink: 0;
 font-size:0.9rem;    /* más pequeño en móvil */
 flex: 1; 

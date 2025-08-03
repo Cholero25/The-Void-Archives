@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>THE VOID ARCHIVE - YELLOW WORLD</title>
     <link rel="stylesheet" href="../../CSS/styles.css">
-    <link rel="icon" type="image/x-icon" href="Images/Logo3.ico">
+    <link rel="icon" type="image/x-icon" href="../../Images/LogoIco.ico">
 </head>
 <body>
 
@@ -30,39 +30,47 @@
     "title-glosary">Power Levels</h2>
 
     <!--------------------Section that holds the categories-------------------------->
- <section class="Powers">
+  <section class="Powers">
 <!--------------------Power First color and content-------------------------->
-      <div  class="flex-colors">
+      <a onclick="colorsector('Blue') "><div  class="flex-colors Blue">
 
-        <div class="L1">
+        <div class="L1 js">
         <img class="Power-icon" src="../../Images/Lesser.png">
         <p>Tier I — Lesser Realities</p>
-        </div>
+        </div></a>
         
       </div>
 <!--------------------Power Second color and content-------------------------->
-      <div  class="flex-colors">
+      <a onclick="colorsector('Green')"><div  class="flex-colors Green">
 
-        <div class="L2">
+        <div class="L2 js">
           <img class="Power-icons" src="../../Images/Icono 1.png">
           <p>Tier II — Eldritch Forces</p></div>
-      </div>
+      </div></a>
 <!--------------------Power Third color and content-------------------------->
-      <div  class="flex-colors">
+      <a onclick="colorsector('Yellow')"><div  class="flex-colors Yellow">
 
-        <div class="L3">
+        <div class="L3 js">
+         
           <img class="Power-icons" src="../../Images/Icono 2.png">
           <p>Tier III — Voidborn Ascendants</p></div>
-
-      </div>
+        </div></a>
 <!--------------------Power Fourth color and content-------------------------->
-      <div class="flex-colors">
+      <a onclick="colorsector('Red')"><div class="flex-colors Red">
           
-        <div class="L4">
+        <div class="L4 js">
           <img class="Power-icons" src="../../Images/Icono 3.png">
           <p>Tier IV — Outer Deities</p></div>
 
-      </div>
+      </div></a>
+
+            <a onclick="colorsector('')"><div class="flex-colors">
+          
+        <div class="L5 js">
+          <img class="Power-icons" src="../../Images/Showall.png">
+          <p>SHOW ALL</p></div>
+
+      </div></a>
 
     </section>
 
@@ -73,7 +81,7 @@
     <main class="Main-cards">
 
    <!--------------------Main that contains all cards-------------------------->
-     <a href="Dagon.html" class="card-links"><!------Makes the card clickable--------->
+     <a href="Dagon.html" class="card-links Blue"><!------Makes the card clickable--------->
      
       <div class="card"><!------Div that holds image and content--------->
         
@@ -100,6 +108,7 @@
       </div>
     </a> <!------End of card this will make it clickable--------->
 
+<a href="Dagon.html" class="card-links Green">
     <div class="card"> <!------Div that holds image and content--------->
 
       <!------Image div --------->
@@ -123,8 +132,9 @@
       </div>
 
     </div>
+</a>
 
-
+<a href="Dagon.html" class="card-links Yellow">
   <div class="card"> <!------Div that holds image and content--------->
       
         <!------Image div --------->
@@ -149,8 +159,9 @@
       </div>
 
     </div>
+  </a>
 
-
+<a href="Dagon.html" class="card-links Red">
   <div class="card"> <!------Div that holds image and content--------->
 
     <!------Image div --------->
@@ -175,6 +186,7 @@
       </div>
 
   </div>
+</a>
     </main>
 
 <!----------------------------------Were Footer starts---------------------------------------------------->    
@@ -209,22 +221,9 @@
     <p>&copy; 2025 The Void Archive. All rites reserved.</p>
   </div>
 </footer><!--------------------End of footer------------------------->
+<script src="../../Javascript/javascript.js"></script>
 </body><!--------------------End of body------------------------->
 
 
-<script>
 
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
-
-hamburger.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
-  hamburger.classList.toggle('active'); // 👉 activa la X visual
-  if (hamburger.textContent === '☰') {
-    hamburger.textContent = '✕';
-  } else {
-    hamburger.textContent = '☰';
-  }
-});
-</script>
 </html>
