@@ -28,22 +28,6 @@ header{
    color: #ccc;
   font-size: 1.3rem;
 }
-.H-LINKS::hover{
-   color:#39FF14;
-    transition: opacity 0.9s ease-in-out;
-    transform: scale(1.25);
-    transition: transform 0.3s ease;
-}
-.H-LINKS:hover{
-  color:#39FF14;
-  transform: scale(1.25);
-transition: transform 0.3s ease;
-}
-.H-L-FLEX:hover{
-  transform: scale(1.1);
-transition: transform 0.3s ease;
-}
-
 /*--------------Changes Links on right side of header-------------------*/
 .H-TITLE{
 text-decoration: none;
@@ -86,11 +70,8 @@ flex-wrap: wrap;}
 }
 
 /*--------------Hover for right side links -------------------*/
-
-
-.Img-logo{
-   transform: scale(1.25);
-transition: transform 0.3s ease;
+.H-LINKS:hover{
+  color:#39FF14;
 }
 
 /*--------------Hamburger hiden on desktop -------------------*/
@@ -934,33 +915,20 @@ font-size: 0.8rem;
 
   grid-template-columns: repeat(2,1fr) ;
 }
-.hero{
-  justify-content: start;
-  max-width: 100vh;
-}
+
 
 .mini-icon3{
   width: 2rem;
 }
 
-
+.hero-content{
+  margin-left: 0;
+}
 .hero-title{
-  font-size: 2.7rem;
+  font-size: 2rem;
 }
 .hero-subtitle{
   font-size: 1.5rem;
-}
-.hero-description{
-  font-size: 1.4rem;
-}
-.hero-button{
-  font-size: 1rem;
-}
-.Hero-Img{
-  max-width: 100%;
-  width: 0;
-  height: auto;
-  max-height: 100%;
 }
 
 
