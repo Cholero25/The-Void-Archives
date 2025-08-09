@@ -28,6 +28,22 @@ header{
    color: #ccc;
   font-size: 1.3rem;
 }
+.H-LINKS::hover{
+   color:#39FF14;
+    transition: opacity 0.9s ease-in-out;
+    transform: scale(1.25);
+    transition: transform 0.3s ease;
+}
+.H-LINKS:hover{
+  color:#39FF14;
+  transform: scale(1.25);
+transition: transform 0.3s ease;
+}
+.H-L-FLEX:hover{
+  transform: scale(1.1);
+transition: transform 0.3s ease;
+}
+
 /*--------------Changes Links on right side of header-------------------*/
 .H-TITLE{
 text-decoration: none;
@@ -70,8 +86,11 @@ flex-wrap: wrap;}
 }
 
 /*--------------Hover for right side links -------------------*/
-.H-LINKS:hover{
-  color:#39FF14;
+
+
+.Img-logo{
+   transform: scale(1.25);
+transition: transform 0.3s ease;
 }
 
 /*--------------Hamburger hiden on desktop -------------------*/
@@ -87,7 +106,7 @@ background-position: center right; /* Mejor posicionamiento */
 display: flex;
 min-height: 80vh;
 max-width: 100%;
-justify-content: space-around; /* Cambiado de center a space-between */
+justify-content: space-between; /* Cambiado de center a space-between */
 align-items: center;
 padding: 2rem 7%; /* Usar porcentaje para mejor responsividad */
 box-sizing: border-box;
@@ -98,17 +117,21 @@ overflow: hidden;
 }
 /*--------------Hero Image Class and animation-------------------*/
 .Hero-Img{
-max-width: 40vw; /* Usar viewport width para mejor escalado */
-min-width: 380px; /* Mínimo para que no se haga muy pequeña */
-height: auto;
-margin-right: 5%;
-align-self: center;
- filter: drop-shadow(0 0 20px rgba(132, 181, 144, 0.2));
+  max-width: 40vw;
+  min-width: 380px;
+  max-height: 700px;
+  margin-right: 5%;
+  align-self: center;
+  filter: drop-shadow(0 0 20px rgba(132, 181, 144, 0.2));
+  transition: opacity 0.9s ease-in-out;
+  opacity: 1;
 }
 
   .Hero-Item {
     position: relative;
   height: 100%;
+  max-width: 40%;
+ 
   pointer-events: none; /* no bloquea clics */
   z-index: 2;
 }
@@ -125,9 +148,12 @@ align-self: center;
  }
 
 .fade-in {
-opacity: 0;
-animation: fadeIn 2s ease-in forwards;
-animation-delay: 0.5s;
+opacity: 1;
+transition: opacity 0.9s ease-in-out;
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -152,20 +178,20 @@ margin-left: 5%; /* Espaciado consistente */
 }
 /*--------------Class that controls the big title on the hero-------------------*/
 .hero-title {
-font-size: clamp(2rem, 7vw, 3.8rem);
+font-size: clamp(2rem, 7vw, 5rem);
 font-weight: bold;
 margin-bottom: 1rem;
 
 }
 /*--------------Class that controls the text under the title-------------------*/
 .hero-subtitle {
-font-size: 1.5rem;
+font-size: 1.8rem;
 line-height: 1.5;
 margin-bottom: 1rem;
 }
 /*--------------Class that controls the text under the subtitle-------------------*/
 .hero-description {
-font-size: 1.1rem;
+font-size: 1.4rem;
 margin-bottom: 2rem;
 color: #d1c091;
 }
@@ -176,6 +202,7 @@ padding: 0.75rem 1.5rem;
 border: 0.1px solid #4e5f4a;
 background-color: #152018;
 color: #d1e7cf;
+font-size: 1.4rem;
 text-decoration: none;
 font-weight: bold;
 letter-spacing: 1px;
@@ -334,7 +361,7 @@ height: 2.1rem;
   display: flex;
   flex-wrap: nowrap;
 flex-shrink: 0;
-font-size:0.7rem;    /* más pequeño en móvil */
+font-size:0.8rem;    /* más pequeño en móvil */
 flex: 1; 
 margin-top: auto;
 color: #d1c091;
@@ -907,12 +934,38 @@ font-size: 0.8rem;
 
   grid-template-columns: repeat(2,1fr) ;
 }
-
+.hero{
+  justify-content: start;
+  max-width: 100vh;
+}
 
 .mini-icon3{
   width: 2rem;
 }
+
+
+.hero-title{
+  font-size: 2.7rem;
 }
+.hero-subtitle{
+  font-size: 1.5rem;
+}
+.hero-description{
+  font-size: 1.4rem;
+}
+.hero-button{
+  font-size: 1rem;
+}
+.Hero-Img{
+  max-width: 100%;
+  width: 0;
+  height: auto;
+  max-height: 100%;
+}
+
+
+
+
 
 /*  Created to become it more responsive  on phone*/
 @media (max-width: 768px) {
@@ -1009,6 +1062,9 @@ cursor: pointer;
   display: none;
   
 }
+.Hero-Item{
+  width: none;
+}
 
 /*  Adjust grid size on landing page card*/
 .Main-Grid{
@@ -1053,7 +1109,7 @@ display: none;
   display: flex;
 flex-wrap: nowrap;
 flex-shrink: 0;
-font-size:0.9rem;    /* más pequeño en móvil */
+font-size:0.8rem;    /* más pequeño en móvil */
 flex: 1; 
 margin-top: auto;
 color: #d1c091;

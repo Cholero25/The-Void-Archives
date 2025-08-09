@@ -38,7 +38,7 @@
     <a href="nothing.html" class="hero-button ">ENTER THE ARCHIVE</a>
   </div>
   <div class="Hero-Item">
-    <img src="Images/Hero1.png" loading="lazy" class="Hero-Img fade-in " alt="Hero octopus creature">
+    <img src=""  id="Carrucel" loading="lazy" class="Hero-Img fade-in " alt="">
   </div>
   <!------------------------Main Cards------------------------->
  </section>
@@ -243,19 +243,5 @@
 </body><!--------------------End of body------------------------->
 
 <!-------------------------------Javasscript---------------------------------------->
-<script>
-
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
-
-hamburger.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
-  hamburger.classList.toggle('active'); // 👉 activa la X visual
-  if (hamburger.textContent === '☰') {
-    hamburger.textContent = '✕';
-  } else {
-    hamburger.textContent = '☰';
-  }
-});
-</script>
+<script src="Javascript/javascript.js"> </script>
 </html>
