@@ -61,7 +61,7 @@ function fadeOutIn() {
 }
 
 // 1️⃣ Mostrar imagen inicial inmediatamente
-putcarrucelinside.src = setInterval(1000,carrucel[index]);
+putcarrucelinside.src = (carrucel[index]);
 putcarrucelinside.classList.add('fade-in');
 
 // 2️⃣ Hacer primer cambio rápido (1 segundo después)
@@ -69,3 +69,42 @@ setTimeout(fadeOutIn, 1000);
 
 // 3️⃣ Continuar el ciclo normal cada 10 segundos
 setInterval(fadeOutIn, 10000);
+
+
+
+
+let indiceActual = 0;
+const imagenesFondo = [
+  "Images/Tentacle.webp",
+  "Images/spacearm.png",
+  "Images/amygala.png",
+  "Images/armdeadspace.png",
+  "Images/fearandhungh.png"
+];
+
+const elementoFondo = document.getElementById('background');
+
+function cambiarFondoConTransicion() {
+  // Aplica fade-out
+  elementoFondo.classList.add('desvanecer');
+  elementoFondo.classList.remove('aparecer');
+
+  setTimeout(() => {
+    // Cambia a la siguiente imagen
+    indiceActual = (indiceActual + 1) % imagenesFondo.length;
+    elementoFondo.style.backgroundImage = `url('${imagenesFondo[indiceActual]}')`;
+
+    // Aplica fade-in
+    elementoFondo.classList.remove('desvanecer');
+    elementoFondo.classList.add('aparecer');
+  }, 900); // tiempo que dura el fade-out
+}
+
+// Imagen inicial
+elementoFondo.style.backgroundImage = `url('${imagenesFondo[indiceActual]}')`;
+elementoFondo.classList.add('aparecer');
+
+setTimeout(fadeOutIn, 3000);
+
+// Cambiar imagen cada 3 segundos
+setInterval(cambiarFondoConTransicion, 10000);

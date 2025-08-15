@@ -87,9 +87,11 @@ background-position: center right; /* Mejor posicionamiento */
 display: flex;
 min-height: 80vh;
 max-width: 100%;
-justify-content: space-between; /* Cambiado de center a space-between */
+justify-content:space-between; /* Cambiado de center a space-between */
 align-items: center;
-padding: 2rem 7%; /* Usar porcentaje para mejor responsividad */
+padding: 2rem 4%; /* Usar porcentaje para mejor responsividad */
+gap: 4rem;
+margin: 0 auto;
 box-sizing: border-box;
 text-align: left; /* Alineación izquierda para mejor legibilidad */
 background-image: url('Images/Hero-back.webp');
@@ -98,23 +100,22 @@ overflow: hidden;
 }
 /*--------------Hero Image Class and animation-------------------*/
 .Hero-Img{
-  max-width: 40vw;
-  min-width: 380px;
-  max-height: 700px;
-  margin-right: 5%;
+  max-width:100%;
+  min-width: 360px;
+  max-height: 670px;
   align-self: center;
   filter: drop-shadow(0 0 20px rgba(132, 181, 144, 0.2));
   transition: opacity 0.9s ease-in-out;
   opacity: 1;
 }
 
-  .Hero-Item {
-    position: relative;
-  height: 100%;
-  max-width: 40%;
+  .Hero-Item { 
+  max-width: 600px;
+  margin-left: auto;
+  align-self: center;
+  transition: opacity 0.9s ease-in-out;
+  opacity: 1;
  
-  pointer-events: none; /* no bloquea clics */
-  z-index: 2;
 }
  .Hero-Item::before{
     content: '';
@@ -154,8 +155,9 @@ z-index: 1;
 .hero-content {
 position: relative;
 z-index: 2;
-max-width: 540px; /* Limita el ancho del texto */
-margin-left: 5%; /* Espaciado consistente */
+
+ /* Limita el ancho del texto */
+ /* Espaciado consistente */
 }
 /*--------------Class that controls the big title on the hero-------------------*/
 .hero-title {
@@ -882,6 +884,17 @@ border-radius: 50%;
     box-shadow: 0 0 10px black;
       }
 
+#background header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Ajusta el 0.4 para más/menos opacidad */
+  z-index: 1; /* Capa por encima del fondo, pero por debajo del texto */
+}
+
 
 
 /* Responsive */
@@ -894,16 +907,18 @@ border-radius: 50%;
   margin: 2.5rem auto;
 }
 
+
 }
 
 
 /*  Break point created to adjust creature card and a medium size screen cause it was hidding click here line  */
 @media (max-width: 1000px) {
 
-.card{
-max-height: 240px;
-font-size: 0.8rem;
+.hero{
+height: 85vh;
 }
+
+
 
 .Powers{display: flex;
   flex-direction: column;
@@ -917,27 +932,71 @@ font-size: 0.8rem;
 }
 
 
-.mini-icon3{
-  width: 2rem;
+#background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  justify-self: center;/* Ocupa todo el ancho de la pantalla */
+  height: 100%; /* Altura completa de la ventana */
+  background-size: contain; /* La imagen siempre completa sin recortar */
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.9s ease-in-out;
+  opacity: 1;
+  z-index: 0;
 }
 
-.hero-content{
-  margin-left: 0;
-}
-.hero-title{
-  font-size: 2rem;
-}
-.hero-subtitle{
-  font-size: 1.5rem;
+#background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Ajusta el 0.4 para más/menos opacidad */
+  z-index: 1; /* Capa por encima del fondo, pero por debajo del texto */
 }
 
+.hero{
 
+  filter: drop-shadow(0 0 20px rgba(132, 181, 144, 0.2));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  text-align: center;
+  opacity: 0;
+  min-height: 75vh;
+  animation: fadeIn 2s ease-in forwards;
+  animation-delay: 0.5s;
+  gap:0px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
 
+}
+/*  Adjust display for desktop hero image*/
+.Hero-Img{
+  display: none;
+  
+}
+.Hero-Item{
+  width: none;
+}
+header{
+    position: sticky; /* ¡La propiedad mágica! */
+    top: 0; 
+      z-index: 100;    /* Asegura que el header esté por encima del contenido */
+    width: 100%;
+}
+}
 
 
 /*  Created to become it more responsive  on phone*/
 @media (max-width: 768px) {
-
+#background{
+  background-size:100%;
+}
 
 
 /*  List items on header , this is to style the list inside the hamburger menu*/
@@ -963,7 +1022,7 @@ flex-wrap: wrap;
 position: absolute;
 top: 90px;
 right: 10px;
-background-color:#12141b;
+background-color:  background-color: rgba(0, 0, 0, 0.4);
 padding: 10px;
 border-radius: 5px;
 height: 100vh;
@@ -1012,8 +1071,8 @@ cursor: pointer;
 /*  Adjusting main hero on phone and animation*/
 .hero{
 
-  background-image: url('../Images/Tentacle.webp');
-   filter: drop-shadow(0 0 20px rgba(132, 181, 144, 0.2));
+  
+  filter: drop-shadow(0 0 20px rgba(132, 181, 144, 0.2));
   background-position: right;
   background-repeat: no-repeat;
   background-size: 100%;
