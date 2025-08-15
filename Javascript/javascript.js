@@ -84,27 +84,26 @@ const imagenesFondo = [
 
 const elementoFondo = document.getElementById('background');
 
-function cambiarFondoConTransicion() {
-  // Aplica fade-out
-  elementoFondo.classList.add('desvanecer');
-  elementoFondo.classList.remove('aparecer');
+// Asegúrate de tener estas clases en tu CSS
+elementoFondo.classList.add('fondo-transicion');
 
+function cambiarFondoConTransicion() {
+  // Primera fase: desvanecer
+  elementoFondo.style.opacity = '0';
+  
   setTimeout(() => {
-    // Cambia a la siguiente imagen
+    // Cambia la imagen
     indiceActual = (indiceActual + 1) % imagenesFondo.length;
     elementoFondo.style.backgroundImage = `url('${imagenesFondo[indiceActual]}')`;
-
-    // Aplica fade-in
-    elementoFondo.classList.remove('desvanecer');
-    elementoFondo.classList.add('aparecer');
-  }, 900); // tiempo que dura el fade-out
+    
+    // Segunda fase: aparecer
+    elementoFondo.style.opacity = '1';
+  }, 1000); // Debe coincidir con el tiempo de transición CSS
 }
 
-// Imagen inicial
+// Configuración inicial
 elementoFondo.style.backgroundImage = `url('${imagenesFondo[indiceActual]}')`;
-elementoFondo.classList.add('aparecer');
+elementoFondo.style.opacity = '1';
 
-setTimeout(fadeOutIn, 3000);
-
-// Cambiar imagen cada 3 segundos
-setInterval(cambiarFondoConTransicion, 10000);
+// Iniciar el carrusel
+setInterval(cambiarFondoConTransicion, 6000);

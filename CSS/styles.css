@@ -94,7 +94,6 @@ gap: 4rem;
 margin: 0 auto;
 box-sizing: border-box;
 text-align: left; /* Alineación izquierda para mejor legibilidad */
-background-image: url('Images/Hero-back.webp');
 max-width: 100%;
 overflow: hidden;
 }
@@ -918,7 +917,49 @@ border-radius: 50%;
 height: 85vh;
 }
 
+.H-R-FLEX {
+  display: none;
+  position: absolute;
+  align-items: center;
+  flex-wrap: wrap;
+  top: 90px;
+  background-color: #444;
+  border-radius: 5px;
+   z-index: 6;
+   height: 20vh;
+   width: 90vw;
+   padding-left: 0;
+   background-color: #09110b;
+   justify-content: center;
+}
 
+
+
+
+
+
+/*  When hamburger is active items will use flex*/
+.H-R-FLEX.active {
+  display: flex;
+}
+/*  Holds the hamburger in place adjust the size of it*/
+.H-FLEX{
+  flex-wrap: nowrap;
+  font-size: 1.4rem;
+}
+
+/* Muestra la X when hamburger is open */
+#hamburger.active::before {
+content: "✕";
+color: black;
+position: absolute;
+top: 0;
+left: 0;
+}
+/* Makes hamburger appear*/
+.hamburger {
+  display: block;
+  cursor: pointer;}
 
 .Powers{display: flex;
   flex-direction: column;
@@ -983,6 +1024,9 @@ height: 85vh;
 .Hero-Item{
   width: none;
 }
+.hero-content{
+  margin-left: auto;
+}
 header{
     position: sticky; /* ¡La propiedad mágica! */
     top: 0; 
@@ -1004,31 +1048,19 @@ header{
   display: none;
   flex-direction: column;
   position: absolute;
-  top: 60px;
-  right: 10px;
+  top: 90px;
   background-color: #444;
-  padding: 10px;
   border-radius: 5px;
    z-index: 6;
+   height: 100vh;
+   right: 5%;
+   width: 90vw;
    background-color: #09110b;
    justify-content: center;
 }
 
 
-.H-R-FLEX {
-display: none;
-flex-direction: column;
-flex-wrap: wrap;
-position: absolute;
-top: 90px;
-right: 10px;
-background-color:  background-color: rgba(0, 0, 0, 0.4);
-padding: 10px;
-border-radius: 5px;
-height: 100vh;
-width: 370px;
-position: fixed;
-}   
+
 
 
 
@@ -1065,14 +1097,16 @@ left: 0;
 cursor: pointer;
 }
 
-
+.hero-title{
+  font-size: 4rem;
+}
 
 
 /*  Adjusting main hero on phone and animation*/
 .hero{
 
   
-  filter: drop-shadow(0 0 20px rgba(132, 181, 144, 0.2));
+  filter: drop-shadow(0 0 20px rgba(93, 131, 102, 0.2));
   background-position: right;
   background-repeat: no-repeat;
   background-size: 100%;
